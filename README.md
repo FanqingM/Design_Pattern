@@ -1,5 +1,7 @@
 # Design_Pattern
 
+**online 的那个package我忘了建了，他在main底下与offline和util时同级的package**
+
 ## git合作流程
 一般来说，master（main）上是我们最终的发行版本，当然他可能有多版，dev是测试版本，我们需要在自己的分支上编写并测试完成后，将自己的分支merge到dev上。
 您一般进行开发时，需要从dev上merge最新版本到您的分支上，当开发与测试完成后您需要将您的版本merge到dev上。
