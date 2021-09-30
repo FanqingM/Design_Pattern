@@ -18,6 +18,12 @@
 ## 分工
 xsc和lyz做online，其余六人做offline
 
+## 关于commit
+不需要用英文，也不必采用过于严格的commit格式，我们的commit最好满足下面三个要求
+- fix: 修改了what
+- feat: 添加了什么功能
+- doc: 添加了什么文档（注释）
+
 ## PS
 如果您需要运行main函数，可以使用，如果报权限错误，您需要给这个命令赋予权限 chmod +x gradlew
 ```
