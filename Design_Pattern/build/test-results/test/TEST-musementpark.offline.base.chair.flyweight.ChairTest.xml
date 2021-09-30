@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="musementpark.offline.base.chair.flyweight.ChairTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-30T07:35:24" hostname="fanqing-mdeMacBook-Pro.local" time="0.021">
+<testsuite name="musementpark.offline.base.chair.flyweight.ChairTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-30T08:08:53" hostname="fanqing-mdeMacBook-Pro.local" time="0.023">
   <properties/>
-  <testcase name="testChairFlyweight()" classname="musementpark.offline.base.chair.flyweight.ChairTest" time="0.021"/>
+  <testcase name="testChairFlyweight()" classname="musementpark.offline.base.chair.flyweight.ChairTest" time="0.023"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[2021-09-30 15:35:24] [信息  ] 
+  <system-err><![CDATA[[2021-09-30 16:08:53] [信息  ] 
 Print:
 	className = Chair;
 	methodName = test;
