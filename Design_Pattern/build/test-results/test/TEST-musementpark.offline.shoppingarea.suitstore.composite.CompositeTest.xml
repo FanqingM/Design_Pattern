@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.shoppingarea.suitstore.composite.CompositeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-07T13:22:16" hostname="fanqing-mdeMacBook-Pro.local" time="0.017">
+  <properties/>
+  <testcase name="CompositeTest()" classname="musementpark.offline.shoppingarea.suitstore.composite.CompositeTest" time="0.017"/>
+  <system-out><![CDATA[+服装
+ +男装
+  -衬衣
+  -夹克
+ +女装
+  -裙子
+  -套装
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
