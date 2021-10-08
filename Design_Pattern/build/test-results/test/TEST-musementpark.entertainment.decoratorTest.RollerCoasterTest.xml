@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.entertainment.decoratorTest.RollerCoasterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-08T05:55:29" hostname="LIN" time="0.133">
+  <properties/>
+  <testcase name="gameTest()" classname="musementpark.entertainment.decoratorTest.RollerCoasterTest" time="0.133"/>
+  <system-out><![CDATA[checkFacility->
+checkTicket->
+intoScene->
+protectEquipment->
+RunRollerCoast->
+clearScene
+]]></system-out>
+  <system-err><![CDATA[[2021-10-08 13:55:29] [信息  ] 
+Print:
+	className = RollerCoaster;
+	methodName = templateTest;
+	description = description:test;
+ 
+]]></system-err>
+</testsuite>
