@@ -1,10 +1,10 @@
-package musementpark.entertainment.decoratorTest;
+package musementpark.offline.entertainment.decoratorTest;
 
 /*
 author: CHS
 description: 装饰者模式，模板模式，过山车类
  */
-import musementpark.entertainment.decorator.Decorator;
+import musementpark.offline.entertainment.decorator.Decorator;
 import musementpark.util.Log;
 import musementpark.util.LogInfo;
 

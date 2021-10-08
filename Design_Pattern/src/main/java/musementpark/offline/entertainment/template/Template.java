@@ -1,18 +1,18 @@
-package musementpark.entertainment.template;
+package musementpark.offline.entertainment.template;
 
 /*
 author: CHS
-description: 模板模式，调用装饰者模式中的接口
+description: 模板模式，调用装饰者模式中的模板接口
  */
-import musementpark.entertainment.decorator.ITemplate;
+import musementpark.offline.entertainment.decorator.ITemplate;
 
 public abstract class Template implements ITemplate {
     @Override
-   public void checkFacility(){System.out.println("checkFacility->");;};
+   public void checkFacility(){System.out.println("checkFacility");;};
     @Override
-    public void checkTicket(){ System.out.println("checkTicket->");};
+    public void checkTicket(){ System.out.println("checkTicket");};
     @Override
-    public void intoScene(){ System.out.println("intoScene->");};
+    public void intoScene(){ System.out.println("intoScene");};
     @Override
     public abstract void PlayGame();
     @Override

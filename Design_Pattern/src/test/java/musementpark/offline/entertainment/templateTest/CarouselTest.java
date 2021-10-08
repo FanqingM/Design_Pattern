@@ -1,10 +1,10 @@
-package musementpark.entertainment.templateTest;
+package musementpark.offline.entertainment.templateTest;
 
 /*
 author: CHS
 description: 模板模式，旋转木马类
  */
-import musementpark.entertainment.template.Template;
+import musementpark.offline.entertainment.template.Template;
 import musementpark.util.Log;
 import musementpark.util.LogInfo;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ public class CarouselTest extends Template {
 
     @Override
     public void PlayGame(){
-        System.out.println("RunCarouselGame->");
+        System.out.println("RunCarouselGame");
     }
     @org.junit.jupiter.api.Test
     void gameTest(){

@@ -1,4 +1,4 @@
-package musementpark.entertainment.decorator;
+package musementpark.offline.entertainment.decorator;
 
 
 /*

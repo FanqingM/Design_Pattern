@@ -1,21 +1,21 @@
-package musementpark.entertainment.decorator;
+package musementpark.offline.entertainment.decorator;
 
 /*
 author: CHS
 description: 装饰者模式，新加保护功能
  */
-import musementpark.entertainment.template.Template;
+import musementpark.offline.entertainment.template.Template;
 
-public class Decorator extends Template implements IProtect{
+public class Decorator extends Template implements IProtect {
 
     @Override
     public void PlayGame() {
-        System.out.println("RunRollerCoast->");
+        System.out.println("RunRollerCoast");
     }
 
     @Override
     public void protectEquipment() {
-        System.out.println("protectEquipment->");
+        System.out.println("protectEquipment");
     }
 
     @Override
