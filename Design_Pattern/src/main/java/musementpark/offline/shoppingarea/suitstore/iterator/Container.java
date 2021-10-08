@@ -1,4 +1,5 @@
 package musementpark.offline.shoppingarea.suitstore.iterator;
 
-public class SuitTree {
+public interface Container {
+    public Iterator getIterator();
 }

@@ -10,23 +10,26 @@ description: 衣服分为男装，女装，男装下有男衣服，男裤子，�
 /**
  * 抽象的组件对象
  */
-public abstract class Component {
+public class Component {
+    private String name = "";
+    public Component components[];
+
+    public void printName() {
+        System.out.println(this.name);
+    }
     /**
      * 输出组件自身的名称
      */
-    public abstract void printStruct(String preStr);
+
+    public void printStruct(String preStr) {
+        ;
+    }
+
     /**
      * 向组合对象中加入组件对象
      * @param child 被加入组合对象中的组件对象
      */
     public void addChild(Component child) {
-        throw new UnsupportedOperationException("对象不支持这个功能");
-    }
-    /**
-     * 从组合对象中移出某个组件对象
-     * @param child 被移出的组件对象
-     */
-    public void removeChild(Component child) {
         throw new UnsupportedOperationException("对象不支持这个功能");
     }
     /**
