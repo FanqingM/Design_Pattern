@@ -1,5 +1,8 @@
 package musementpark.offline.base.flower.adapter;
-
+/*
+author: FanqingM
+description: 迭代器模式客户端代码
+ */
 import org.junit.jupiter.api.Assertions.*;
 import musementpark.offline.base.flower.adapter.*;
 import org.junit.jupiter.api.Test;

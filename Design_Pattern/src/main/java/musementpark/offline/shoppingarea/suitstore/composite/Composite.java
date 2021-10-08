@@ -1,5 +1,9 @@
 package musementpark.offline.shoppingarea.suitstore.composite;
 
+/*
+author: FanqingM
+description: 非叶子对象
+ */
 import musementpark.offline.shoppingarea.suitstore.composite.Component;
 import java.util.ArrayList;
 import java.util.List;

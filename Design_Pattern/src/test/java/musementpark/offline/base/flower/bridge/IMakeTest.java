@@ -1,5 +1,8 @@
 package musementpark.offline.base.flower.bridge;
-
+/*
+author: FanqingM
+description: 桥接模式客户端代码
+ */
 import org.junit.jupiter.api.Assertions.*;
 import musementpark.offline.base.flower.bridge.*;
 import org.junit.jupiter.api.Test;

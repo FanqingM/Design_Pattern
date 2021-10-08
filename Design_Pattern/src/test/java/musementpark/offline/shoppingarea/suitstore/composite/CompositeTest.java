@@ -1,5 +1,8 @@
 package musementpark.offline.shoppingarea.suitstore.composite;
-
+/*
+author: FanqingM
+description: 组合模式客户端
+ */
 import musementpark.offline.shoppingarea.suitstore.composite.*;
 import org.junit.jupiter.api.Test;
 

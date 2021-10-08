@@ -5,7 +5,7 @@ import java.util.Collection;
 
 /*
 author: FanqingM
-description: 衣服分为男装，女装，男装下有男衣服，男裤子，男鞋，女装下有女衣服，女裤子，女鞋，这里上级对下级是包含关系
+description: 组成成分类，叶子与非叶子都继承于此，对于客户端统一标识
  */
 /**
  * 抽象的组件对象

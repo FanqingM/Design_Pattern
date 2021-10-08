@@ -1,5 +1,8 @@
 package musementpark.offline.shoppingarea.suitstore.iterator;
-
+/*
+author: FanqingM
+description: 迭代器模式客户端，构造与组合模式一样的商品树，用迭代器的方式进行输出商品树
+ */
 import musementpark.offline.shoppingarea.suitstore.composite.*;
 import musementpark.offline.shoppingarea.suitstore.iterator.*;
 import org.junit.jupiter.api.Test;

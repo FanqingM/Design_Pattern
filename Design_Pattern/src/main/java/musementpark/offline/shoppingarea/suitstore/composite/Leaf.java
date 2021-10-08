@@ -1,6 +1,9 @@
 package musementpark.offline.shoppingarea.suitstore.composite;
 
-
+/*
+author: FanqingM
+description: 叶子对象
+ */
 public class Leaf extends Component{
 
     private String name = "";
