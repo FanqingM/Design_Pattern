@@ -1,4 +1,4 @@
 package musementpark.offline.entertainment.escaperoom.facade;
 
-public class facade {
+public class Facade {
 }
