@@ -4,24 +4,22 @@ package musementpark.entertainment.templateTest;
 author: CHS
 description: 模板模式，旋转木马类
  */
-import musementpark.entertainment.template.template;
+import musementpark.entertainment.template.Template;
 import musementpark.util.Log;
 import musementpark.util.LogInfo;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-public class CarouselTest extends template {
+public class CarouselTest extends Template {
 
     @Test
 
     @Override
-    public void RunGame(){
+    public void PlayGame(){
         System.out.println("RunCarouselGame->");
     }
     @org.junit.jupiter.api.Test
     void gameTest(){
-        Play();
+        Run();
         Log.log(
                 new LogInfo(
                         "Carousel",

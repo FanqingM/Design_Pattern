@@ -4,6 +4,6 @@ public interface ITemplate {
      void checkFacility();
      void checkTicket();
     void intoScene();
-     void RunGame();
+     void PlayGame();
      void clearScene();
 }

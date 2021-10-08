@@ -6,7 +6,7 @@ description: 模板模式，调用装饰者模式中的接口
  */
 import musementpark.entertainment.decorator.ITemplate;
 
-public abstract class template implements ITemplate {
+public abstract class Template implements ITemplate {
     @Override
    public void checkFacility(){System.out.println("checkFacility->");;};
     @Override
@@ -14,15 +14,15 @@ public abstract class template implements ITemplate {
     @Override
     public void intoScene(){ System.out.println("intoScene->");};
     @Override
-    public abstract void RunGame();
+    public abstract void PlayGame();
     @Override
     public void clearScene(){  System.out.println("clearScene");};
 
-    public  void Play(){
+    public  void Run(){
         checkFacility();
         checkTicket();
         intoScene();
-        RunGame();
+        PlayGame();
         clearScene();
     }
 }
