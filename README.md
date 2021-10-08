@@ -1,5 +1,6 @@
 # Design_Pattern
 
+## 本项目JDK版本是1.8
 **online 的那个package我忘了建了，他在main底下与offline和util时同级的package**
 
 ## git合作流程
