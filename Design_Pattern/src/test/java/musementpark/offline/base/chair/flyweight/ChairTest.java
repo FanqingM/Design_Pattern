@@ -6,8 +6,6 @@ description: chair对应的test的demo code
  */
 
 import org.junit.jupiter.api.Test;
-import musementpark.offline.base.chair.flyweight.Chair;
-import static org.junit.jupiter.api.Assertions.*;
 
 class ChairTest {
     @Test

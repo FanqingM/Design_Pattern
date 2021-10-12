@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.online.ticket.TicketTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-12T04:27:26" hostname="LAPTOP-OH8EUPFU" time="0.017">
+  <properties/>
+  <testcase name="testTicket()" classname="musementpark.online.ticket.TicketTest" time="0.017"/>
+  <system-out><![CDATA[You have bought 2 tickets
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
