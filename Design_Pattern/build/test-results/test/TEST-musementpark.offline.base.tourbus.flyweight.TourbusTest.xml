@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.base.tourbus.flyweight.TourbusTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-12T02:54:58" hostname="DESKTOP-IVGRJEU" time="0.043">
+  <properties/>
+  <testcase name="testTourbusFlyweight()" classname="musementpark.offline.base.tourbus.flyweight.TourbusTest" time="0.043"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[2021-10-12 10:54:58] [信息  ] 
+Print:
+	className = Tourbus;
+	methodName = test;
+	description = description:test;
+ 
+]]></system-err>
+</testsuite>

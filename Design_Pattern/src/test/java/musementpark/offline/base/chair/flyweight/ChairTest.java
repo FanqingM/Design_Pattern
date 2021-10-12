@@ -1,8 +1,8 @@
 package musementpark.offline.base.chair.flyweight;
 
 /*
-author: Fanqing_M
-description: chair对应的test的demo code
+author: LRZ
+description: tourbus对应的test的demo code
  */
 
 import org.junit.jupiter.api.Test;
