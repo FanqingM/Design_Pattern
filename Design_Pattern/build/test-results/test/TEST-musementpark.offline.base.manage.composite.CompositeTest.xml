@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.base.manage.composite.CompositeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-14T03:16:34" hostname="LAPTOP-OH8EUPFU" time="0.027">
+  <properties/>
+  <testcase name="testComposite()" classname="musementpark.offline.base.manage.composite.CompositeTest" time="0.027"/>
+  <system-out><![CDATA[I am boss,I can manage
+I am HR,I can nothing
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
