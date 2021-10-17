@@ -1,6 +1,6 @@
-package Online.Prototype_Bridge.Visitor;
+package musementpark.online.Prototype_Bridge.Visitor;
 
-import Online.Prototype_Bridge.PlayRestrict.PlayRestrict;
+import musementpark.online.Prototype_Bridge.PlayRestrict.PlayRestrict;
 
 import java.util.HashMap;
 

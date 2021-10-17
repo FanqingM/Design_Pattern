@@ -1,4 +1,4 @@
-package Online.Prototype_Bridge.Visitor;
+package musementpark.online.Prototype_Bridge.Visitor;
 
 public class Child extends Visitor{
     private static final Child _child = new Child();

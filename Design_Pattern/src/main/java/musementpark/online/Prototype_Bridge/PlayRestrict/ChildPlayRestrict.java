@@ -1,4 +1,4 @@
-package Online.Prototype_Bridge.PlayRestrict;
+package musementpark.online.Prototype_Bridge.PlayRestrict;
 
 public class ChildPlayRestrict implements PlayRestrict{
     @Override
