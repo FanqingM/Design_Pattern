@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.base.manage.decorator.DecoratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-17T04:17:53" hostname="LAPTOP-OH8EUPFU" time="0.02">
+  <properties/>
+  <testcase name="testDecorator()" classname="musementpark.offline.base.manage.decorator.DecoratorTest" time="0.02"/>
+  <system-out><![CDATA[I am HD,I can wuwuwuw
+my decorator is:wuhu
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
