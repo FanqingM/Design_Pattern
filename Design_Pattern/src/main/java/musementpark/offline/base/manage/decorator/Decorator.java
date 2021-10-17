@@ -19,7 +19,7 @@ public class Decorator extends ComponentManage {
 
     @Override
     public void check() {
-        dowork();
+
     }
 
 

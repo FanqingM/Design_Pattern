@@ -7,5 +7,6 @@ public class DecoratorTest {
     void testDecorator(){
         Decorator HD= new Decorator("HD","yingyingying","wuhu");
         HD.setDeco();
+        HD.check();
     }
 }
