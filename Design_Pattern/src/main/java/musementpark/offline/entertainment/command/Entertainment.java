@@ -39,8 +39,16 @@ public class Entertainment {
         this.light++;
         System.out.println("增强灯光!");
     }
+    private Entertainment copy() {
+        Entertainment entertainment = new Entertainment();
+        entertainment.light = this.light;
+        entertainment.volume = this.volume;
+        entertainment.isOpen = this.isOpen;
+        return entertainment;
+    }
     public Memento createMemento() {
-        return new Memento(this,this.light,this.isOpen,this.volume);
+        Entertainment entertainment = this.copy();
+        return new Memento(entertainment,this.light,this.isOpen,this.volume);
     }
     public void undo() {
 
