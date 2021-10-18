@@ -6,7 +6,7 @@ import java.util.List;
 /*
 Invoke 调用者
  */
-class Macro {
+public class Macro {
     private List<EntertainmentCommand> myCommands;
     public Macro() {
         myCommands = new ArrayList<EntertainmentCommand>();
@@ -23,6 +23,8 @@ class Macro {
         }
     }
     public void undo() {
-        ;
+        for(EntertainmentCommand dc: myCommands) {
+            dc.undo();
+        }
     }
 }
