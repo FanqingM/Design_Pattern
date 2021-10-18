@@ -7,19 +7,22 @@ import java.util.List;
 Invoke 调用者
  */
 class Macro {
-    private List<DocumentCommand> myCommands;
+    private List<EntertainmentCommand> myCommands;
     public Macro() {
-        myCommands = new ArrayList<DocumentCommand>();
+        myCommands = new ArrayList<EntertainmentCommand>();
     }
-    public void addCommand(DocumentCommand dc) {
+    public void addCommand(EntertainmentCommand dc) {
         myCommands.add(dc);
     }
-    public void removeCommand(DocumentCommand dc) {
+    public void removeCommand(EntertainmentCommand dc) {
         myCommands.remove(dc);
     }
     public void execute() {
-        for(DocumentCommand dc: myCommands) {
+        for(EntertainmentCommand dc: myCommands) {
             dc.execute();
         }
+    }
+    public void undo() {
+        ;
     }
 }
