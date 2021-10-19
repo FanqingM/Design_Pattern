@@ -17,6 +17,7 @@ class MementoTest {
         myMacro.addCommand(new LightCommand(entertain));
         EntertainmentCommand cc = new CloseCommand(entertain);
         myMacro.execute();
+        //这里应该用宏命令创建备忘录
         Memento m = entertain.createMemento();
         System.out.println(m.volume);
         System.out.println(m.light);
