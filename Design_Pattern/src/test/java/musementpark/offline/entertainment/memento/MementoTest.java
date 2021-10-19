@@ -43,8 +43,8 @@ class MementoTest {
         Memento mem = mementoStack.get();
         entertain = mem.getState();
         System.out.println("撤销操作后状态");
-        System.out.println("开关的状态: " + mem.getState().isOpen);
-        System.out.println("灯的状态: " + mem.getState().light);
-        System.out.println("音量的状态: " + mem.getState().volume);
+        System.out.println("开关的状态: " + entertain.isOpen);
+        System.out.println("灯的状态: " + entertain.light);
+        System.out.println("音量的状态: " + entertain.volume);
     }
 }
