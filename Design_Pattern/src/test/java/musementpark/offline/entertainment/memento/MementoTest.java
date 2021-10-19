@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MementoTest {
     public static void main(String[] args) {
-        Entertainment entertain = new Entertainment();
+        Entertainment entertain = new Entertainment("娱乐设施");
         MementoStack mementoStack = new MementoStack();
         Memento memento = new Memento();
         Macro myMacro = new Macro();

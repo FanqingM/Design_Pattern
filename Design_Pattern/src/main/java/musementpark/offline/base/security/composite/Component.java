@@ -8,6 +8,7 @@ import musementpark.offline.base.security.visitor.Visitor;
  */
 public abstract class Component {
 
+    public String name;
     /**
      * 接受访问
      * @param visitor

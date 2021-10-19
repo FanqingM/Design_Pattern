@@ -18,6 +18,7 @@ public class Composite extends Component {
 
     public Composite(String name) {
         super();
+        super.name = name;
         this.name = name;
     }
 

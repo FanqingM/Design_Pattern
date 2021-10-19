@@ -9,12 +9,14 @@ import musementpark.offline.base.security.visitor.Visitor;
 public class Leaf extends Component {
 
     private String name;
-
+//    public void execute() {
+//
+//    }
     public Leaf(String name) {
         super();
+        super.name = name;
         this.name = name;
     }
-
     @Override
     public void accept(Visitor visitor) {
         visitor.visitLeaf(this);

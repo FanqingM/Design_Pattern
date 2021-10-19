@@ -1,12 +1,13 @@
-package musementpark.offline.entertainment.command;
+package musementpark.offline.entertainment.command.decorator;
 
 import musementpark.offline.base.security.composite.Component;
 import musementpark.offline.base.security.composite.Composite;
 import musementpark.offline.base.security.composite.Leaf;
 
-class MacroCommandTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+class CommandDecoratorTest {
     public static void main(String[] args) {
-        //创建一个树状结构
         Component root = new Composite("娱乐区");
 
         Component c1 = new Composite("高空");
@@ -23,21 +24,8 @@ class MacroCommandTest {
         Component lf4 = new Leaf("鬼屋");
         c2.addChild(lf3);
         c2.addChild(lf4);
-        Entertainment entertain = new Entertainment("娱乐设施");
-
-        Macro myMacro = new Macro();
-        myMacro.addCommand(new OpenCommand(entertain));
-        myMacro.addCommand(new VolumeCommand(entertain));
-        myMacro.addCommand(new LightCommand(entertain));
-        EntertainmentCommand cc = new CloseCommand(entertain);
-        myMacro.addCommand(cc);
-        myMacro.execute();
-
-        System.out.println("------------------------------");
-        myMacro.removeCommand(cc);
-        myMacro.execute();
-
+        CommandDecorator commandDecorator = new CommandDecorator(lf1);
+        System.out.println(commandDecorator.component.name);
+        commandDecorator.volumeUp();
     }
-
-
 }
