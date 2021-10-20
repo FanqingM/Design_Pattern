@@ -65,8 +65,8 @@ public class Entertainment extends Component{
         System.out.println("撤销操作，等待实现");
     }
 
-    @Override
-    public void accept(Visitor visitor) {
-
-    }
+//    @Override
+//    public void accept(Visitor visitor) {
+//
+//    }
 }

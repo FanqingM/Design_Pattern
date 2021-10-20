@@ -13,7 +13,9 @@ public abstract class Component {
      * 接受访问
      * @param visitor
      */
-    public abstract void accept(Visitor visitor);
+    public void accept(Visitor visitor) {
+        throw new UnsupportedOperationException("对象不支持这个功能！");
+    }
 
 
     /**
