@@ -1,6 +1,6 @@
 package musementpark.offline.entertainment.decorator;
 
-public class FenceDecorator extends FacilityDecorator {
+public class FenceDecorator extends EntertainmentDecorator {
     private Integer finceCost = 1;
     public FenceDecorator(Facility aBattercake) {
         super(aBattercake);

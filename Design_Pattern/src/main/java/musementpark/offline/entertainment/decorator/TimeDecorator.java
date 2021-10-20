@@ -1,6 +1,6 @@
 package musementpark.offline.entertainment.decorator;
 
-public class TimeDecorator extends FacilityDecorator {
+public class TimeDecorator extends EntertainmentDecorator {
     private Integer timeCost = 2;
     public TimeDecorator(Facility aBattercake) {
         super(aBattercake);

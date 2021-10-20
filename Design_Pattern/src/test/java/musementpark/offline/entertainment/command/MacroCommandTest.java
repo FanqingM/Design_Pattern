@@ -36,8 +36,5 @@ class MacroCommandTest {
         System.out.println("------------------------------");
         myMacro.removeCommand(cc);
         myMacro.execute();
-
     }
-
-
 }

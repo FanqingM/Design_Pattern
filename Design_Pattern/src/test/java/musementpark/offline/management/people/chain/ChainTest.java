@@ -40,8 +40,6 @@ class ChainTest {
         Bug bug = new Bug(50);
 
         lf3.handle(bug);
-//        c2.handle(middle);
-//        root.handle(hard);
     }
 
 }

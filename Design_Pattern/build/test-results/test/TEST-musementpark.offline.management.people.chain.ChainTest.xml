@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.management.people.chain.ChainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-20T00:23:27" hostname="fanqing-mdeMacBook-Pro.local" time="0.017">
+  <properties/>
+  <testcase name="test()" classname="musementpark.offline.management.people.chain.ChainTest" time="0.017"/>
+  <system-out><![CDATA[总管理员解决了一个难度为 50 的 bug
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
