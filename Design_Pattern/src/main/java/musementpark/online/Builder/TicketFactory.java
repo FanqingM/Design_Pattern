@@ -1,4 +1,8 @@
-package online;
+package musementpark.online.Builder;
+
+import musementpark.online.Prototype.Visitor;
+
+import java.util.Locale;
 
 public class TicketFactory {
     private int _fullPrice;
@@ -43,14 +47,14 @@ public class TicketFactory {
     private TicketFactory(){};
     private static final TicketFactory _singleton = new TicketFactory();
 
-    public Ticket getTicket(Type type,Visitor owner)
+    public Ticket getTicket(String type,Visitor owner)
     {
-        switch (type) {
-            case CHILD:
+        switch (type.toUpperCase()) {
+            case "CHILD":
                 return new ChildTicket(owner,_fullPrice,_childDiscount);
-            case ADULT:
+            case "ADULT":
                 return new AdultTicket(owner,_fullPrice);
-            case FREE:
+            case "FREE":
                 return new FreeTicket(owner,_fullPrice,_freeDiscount);
             default:
                 return null;

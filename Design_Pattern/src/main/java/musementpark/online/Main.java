@@ -1,8 +1,5 @@
-package Online;
+package musementpark.online;
 
-import Online.Prototype_Bridge.Visitor.Visitor;
-import Online.SingleFactory_AbstractFactory_FactoryMethod_Singleton.AbstractFactory;
-import Online.SingleFactory_AbstractFactory_FactoryMethod_Singleton.FactoryProducer;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -38,36 +35,36 @@ class AccessingAllClassesInPackage {
 
 public class Main {
 
-    public static void test_Singleton()
-    {
-        FactoryProducer.getFactory("adult");
-        FactoryProducer.getFactory("child");
-    }
-
-    public static void test_Prototype()
-    {
-        //直接测试
-        Visitor visitor=Visitor.findAndClone("adult");
-    }
-
-    public static void test_AbstractFactory()
-    {
-        AbstractFactory myFactory = FactoryProducer.getFactory("adult");
-        Visitor visitor = myFactory.getVisitor();
-    }
-
-    public static void test_Bridge()
-    {
-        AbstractFactory myFactory = FactoryProducer.getFactory("adult");
-
-        Visitor visitor=myFactory.getVisitor();
-
-        System.out.println(visitor.getClass().getName());
-
-        myFactory.setPlayRestrict(visitor);
-
-        visitor.playKarting();
-    }
+//    public static void test_Singleton()
+//    {
+//        FactoryProducer.getFactory("adult");
+//        FactoryProducer.getFactory("child");
+//    }
+//
+//    public static void test_Prototype()
+//    {
+//        //直接测试
+//        Visitor visitor=Visitor.findAndClone("adult");
+//    }
+//
+//    public static void test_AbstractFactory()
+//    {
+//        AbstractFactory myFactory = FactoryProducer.getFactory("adult");
+//        Visitor visitor = myFactory.getVisitor();
+//    }
+//
+//    public static void test_Bridge()
+//    {
+//        AbstractFactory myFactory = FactoryProducer.getFactory("adult");
+//
+//        Visitor visitor=myFactory.getVisitor();
+//
+//        System.out.println(visitor.getClass().getName());
+//
+//        myFactory.setPlayRestrict(visitor);
+//
+//        visitor.playKarting();
+//    }
 
     public static void main(String[] args) throws ClassNotFoundException {
         AccessingAllClassesInPackage.findAllClassesUsingClassLoader("Online.Prototype_Bridge.Visitor");
@@ -78,6 +75,5 @@ public class Main {
 //        test_Singleton();
 //        test_Prototype();
 //        test_AbstractFactory();
-        test_Bridge();
     }
 }

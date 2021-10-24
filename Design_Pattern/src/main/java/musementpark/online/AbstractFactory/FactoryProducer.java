@@ -1,4 +1,4 @@
-package musementpark.online.SingleFactory_AbstractFactory_FactoryMethod_Singleton;
+package musementpark.online.AbstractFactory;
 
 public class FactoryProducer {
     public static AbstractFactory getFactory(String choice)

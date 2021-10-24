@@ -1,9 +1,9 @@
-package musementpark.online.SingleFactory_AbstractFactory_FactoryMethod_Singleton;
+package musementpark.online.AbstractFactory;
 
-import musementpark.online.Prototype_Bridge.PlayRestrict.AdultPlayRestrict;
-import musementpark.online.Prototype_Bridge.Visitor.Adult;
-import musementpark.online.Prototype_Bridge.Visitor.Child;
-import musementpark.online.Prototype_Bridge.Visitor.Visitor;
+import musementpark.online.Bridge.AdultPlayRestrict;
+import musementpark.online.Prototype.Adult;
+import musementpark.online.Prototype.Child;
+import musementpark.online.Prototype.Visitor;
 
 public class AdultFactory implements AbstractFactory{
     private static final AdultFactory _singleton = new AdultFactory();

@@ -1,4 +1,6 @@
-package online;
+package musementpark.online.Builder;
+
+import musementpark.online.Prototype.Visitor;
 
 public class FreeTicket extends Ticket{
     private double _discount;

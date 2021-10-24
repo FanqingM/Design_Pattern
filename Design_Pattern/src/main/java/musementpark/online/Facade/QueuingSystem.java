@@ -16,5 +16,4 @@ public class QueuingSystem {
         rollerCoaster.queueUp();
         whirligig.queueUp();
     }
-
 }

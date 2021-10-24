@@ -1,4 +1,4 @@
-package musementpark.online.Prototype_Bridge.PlayRestrict;
+package musementpark.online.Bridge;
 
 public interface PlayRestrict {
     public void playWhirligig(String visitorName);

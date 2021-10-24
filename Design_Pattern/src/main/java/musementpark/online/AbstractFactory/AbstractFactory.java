@@ -1,6 +1,7 @@
-package musementpark.online.SingleFactory_AbstractFactory_FactoryMethod_Singleton;
+package musementpark.online.AbstractFactory;
 
-import musementpark.online.Prototype_Bridge.Visitor.Visitor;
+import musementpark.online.Prototype.Visitor;
+
 
 public interface AbstractFactory {
     public Visitor getVisitor();
