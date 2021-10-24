@@ -3,7 +3,7 @@ package musementpark.offline.management.people.mediator;
 // 中介者实现
 public class ConcreteMediator extends Mediator{
 
-    public ConcreteMediator(Colleague colleagueA, Colleague colleagueB) {
+    public ConcreteMediator(Component colleagueA, Component colleagueB) {
         super(colleagueA, colleagueB);
     }
 

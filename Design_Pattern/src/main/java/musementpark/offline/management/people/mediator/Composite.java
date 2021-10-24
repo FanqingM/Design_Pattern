@@ -1,4 +1,4 @@
-package musementpark.offline.management.people.composite;
+package musementpark.offline.management.people.mediator;
 
 
 import musementpark.offline.management.people.chain.Bug;
@@ -68,5 +68,7 @@ public class Composite extends Component {
     public void operation() {
         System.out.println(this.name + "的一些操作");
     }
-
+    public void notifyColleagueA() {
+        mediator.notifyColleagueA();
+    }
 }

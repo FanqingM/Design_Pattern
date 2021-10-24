@@ -1,4 +1,4 @@
-package musementpark.offline.management.people.composite;
+package musementpark.offline.management.people.mediator;
 
 
 import musementpark.offline.management.people.chain.Bug;
@@ -42,5 +42,8 @@ public class Leaf extends Component {
     @Override
     public void operation() {
         System.out.println(this.name + "的一些操作");
+    }
+    public void notifyColleagueB() {
+        mediator.notifyColleagueB();
     }
 }

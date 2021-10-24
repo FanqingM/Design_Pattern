@@ -3,10 +3,10 @@ package musementpark.offline.management.people.mediator;
 // 抽象中介者
 public abstract class Mediator {
 
-    protected Colleague colleagueA;
-    protected Colleague colleagueB;
+    protected Component colleagueA;
+    protected Component colleagueB;
 
-    public Mediator(Colleague colleagueA, Colleague colleagueB) {
+    public Mediator(Component colleagueA, Component colleagueB) {
         this.colleagueA = colleagueA;
         this.colleagueB = colleagueB;
     }

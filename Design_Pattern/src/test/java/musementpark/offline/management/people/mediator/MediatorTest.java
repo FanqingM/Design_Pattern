@@ -1,8 +1,8 @@
 package musementpark.offline.management.people.mediator;
 
-import musementpark.offline.management.people.composite.Component;
-import musementpark.offline.management.people.composite.Composite;
-import musementpark.offline.management.people.composite.Leaf;
+import musementpark.offline.management.people.mediator.Component;
+import musementpark.offline.management.people.mediator.Composite;
+import musementpark.offline.management.people.mediator.Leaf;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -37,15 +37,18 @@ class MediatorTest {
         lf4.setParent(c2);
 
 
-        Colleague colleagueA = new ConcreteColleagueA();
-        Colleague colleagueB = new ConcreteColleagueB();
+//        Colleague colleagueA = new ConcreteColleagueA();
+//        Colleague colleagueB = new ConcreteColleagueB();
 
-        Mediator mediator = new ConcreteMediator(colleagueA, colleagueB);
-        colleagueA.setMediator(mediator);
-        colleagueB.setMediator(mediator);
+        //构造这两个对象的中介者
+        Mediator mediator = new ConcreteMediator(lf1, lf2);
+        lf1.setMediator(mediator);
+        lf2.setMediator(mediator);
 
-        ((ConcreteColleagueA)colleagueA).notifyColleagueB();
-        ((ConcreteColleagueB)colleagueB).notifyColleagueA();
+//        ((ConcreteColleagueA)colleagueA).notifyColleagueB();
+//        ((ConcreteColleagueB)colleagueB).notifyColleagueA();
+        lf1.mediator.notifyColleagueB();
+        lf2.mediator.notifyColleagueA();
     }
 
 }

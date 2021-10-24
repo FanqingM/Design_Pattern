@@ -1,4 +1,4 @@
-package musementpark.offline.management.people.composite;
+package musementpark.offline.management.people.mediator;
 
 
 import musementpark.offline.management.people.chain.Bug;
@@ -8,10 +8,14 @@ import musementpark.offline.management.people.chain.Bug;
  * @date 2016年2月29日
  */
 public abstract class Component {
+    protected Mediator mediator;
 
-    public void setLevel(int level) {
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
     }
-    public void operation() {
+
+    public abstract void operation();
+    public void setLevel(int level) {
     }
     public void handle(Bug bug) {
         throw new UnsupportedOperationException("对象不支持这个功能！");
