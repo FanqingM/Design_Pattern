@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.base.flower.adapter.AdapterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-24T08:10:05" hostname="fanqing-mdeMacBook-Pro.local" time="0.019">
+  <properties/>
+  <testcase name="plantForWinter()" classname="musementpark.offline.base.flower.adapter.AdapterTest" time="0.019"/>
+  <system-out><![CDATA[正常情况栽种菊花和梅花
+冬季只能种梅花
+执行了适配器操作
+冬季栽种梅花
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
