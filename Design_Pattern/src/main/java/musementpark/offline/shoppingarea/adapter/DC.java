@@ -1,4 +1,4 @@
-package musementpark.offline.shoppingarea;
+package musementpark.offline.shoppingarea.adapter;
 
 public interface DC {
 

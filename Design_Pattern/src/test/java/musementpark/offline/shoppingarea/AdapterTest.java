@@ -1,6 +1,8 @@
 package musementpark.offline.shoppingarea;
 
-import static org.junit.jupiter.api.Assertions.*;
+import musementpark.offline.shoppingarea.adapter.AC220;
+import musementpark.offline.shoppingarea.adapter.DC;
+import musementpark.offline.shoppingarea.adapter.PowerAdapter;
 
 class AdapterTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package musementpark.offline.shoppingarea;
+package musementpark.offline.shoppingarea.adapter;
 
 public class AC220 {
     public int outputAC220V() {

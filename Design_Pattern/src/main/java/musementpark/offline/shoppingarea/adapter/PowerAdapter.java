@@ -1,4 +1,4 @@
-package musementpark.offline.shoppingarea;
+package musementpark.offline.shoppingarea.adapter;
 
 public class PowerAdapter implements DC {
 
