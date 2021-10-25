@@ -14,6 +14,7 @@ public class CompositeTest {
         CompositeManage boss=new CompositeManage("boss","manage");
         LeafManage HR =new LeafManage("HR","nothing");
         boss.addComponent(HR);
+        boss.removeComponent(HR);
         boss.check();
     }
 }
