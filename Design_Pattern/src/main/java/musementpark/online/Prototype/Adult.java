@@ -11,14 +11,4 @@ public class Adult extends Visitor{
     public Adult clone() {
         return new Adult(1);
     }
-
-    @Override
-    public void playWhirligig() {
-        _restrict.playWhirligig("成人");
-    }
-
-    @Override
-    public void playKarting() {
-        _restrict.playKarting("成人");
-    }
 }

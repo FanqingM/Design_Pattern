@@ -1,6 +1,7 @@
 package musementpark.online.Prototype;
 
-import musementpark.online.Bridge.PlayRestrict;
+import musementpark.online.Bridge.Common;
+import musementpark.online.Bridge.Status;
 
 import java.util.HashMap;
 
@@ -21,12 +22,10 @@ public abstract class Visitor {
     }
     public abstract Visitor clone();
 
-    protected PlayRestrict _restrict;
-    public void setPlayRestrict(PlayRestrict restrict)
-    {
-        _restrict=restrict;
-    }
-    public abstract void playWhirligig();
-    public abstract void playKarting();
 
+    protected Status status = new Common();
+    public void setStatus()
+    {
+
+    }
 }

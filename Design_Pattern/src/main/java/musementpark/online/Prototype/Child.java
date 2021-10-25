@@ -11,14 +11,4 @@ public class Child extends Visitor{
     public Child clone() {
         return new Child(1);
     }
-
-    @Override
-    public void playWhirligig() {
-        _restrict.playWhirligig("儿童");
-    }
-
-    @Override
-    public void playKarting() {
-        _restrict.playKarting("儿童");
-    }
 }

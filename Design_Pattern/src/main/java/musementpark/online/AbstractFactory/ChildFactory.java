@@ -1,9 +1,5 @@
 package musementpark.online.AbstractFactory;
 
-import musementpark.online.Bridge.AdultPlayRestrict;
-import musementpark.online.Bridge.ChildPlayRestrict;
-import musementpark.online.Prototype.Adult;
-import musementpark.online.Prototype.Child;
 import musementpark.online.Prototype.Visitor;
 
 

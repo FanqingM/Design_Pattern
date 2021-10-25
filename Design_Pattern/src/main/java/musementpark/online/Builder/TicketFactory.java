@@ -2,8 +2,6 @@ package musementpark.online.Builder;
 
 import musementpark.online.Prototype.Visitor;
 
-import java.util.Locale;
-
 public class TicketFactory {
     private int _fullPrice;
     private double _childDiscount;
@@ -47,7 +45,12 @@ public class TicketFactory {
     private TicketFactory(){};
     private static final TicketFactory _singleton = new TicketFactory();
 
-    public Ticket getTicket(String type,Visitor owner)
+    public TicketFactory getInstance()
+    {
+        return _singleton;
+    }
+
+    public Ticket addTicket(String type,Visitor owner)
     {
         switch (type.toUpperCase()) {
             case "CHILD":
