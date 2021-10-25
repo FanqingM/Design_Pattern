@@ -1,9 +1,9 @@
 package musementpark.online.Builder;
 
-public class FreeTicket extends Ticket{
+public class ElderTicket extends Ticket{
     private double _discount;
 
-    FreeTicket(int price, double discount){
+    ElderTicket(int price, double discount){
         super(price);
         this._discount=discount;
     }

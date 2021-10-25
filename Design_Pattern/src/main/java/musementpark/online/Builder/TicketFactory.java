@@ -1,23 +1,21 @@
 package musementpark.online.Builder;
 
-import musementpark.online.Prototype.Visitor;
-
 public class TicketFactory {
     private int _fullPrice;
     private double _childDiscount;
-    private double _freeDiscount;
+    private double _elderDiscount;
 
     private void set(Builder builder)
     {
         this._fullPrice=builder._fullPrice;
         this._childDiscount= builder._childDiscount;
-        this._freeDiscount=builder._freeDiscount;
+        this._elderDiscount=builder._elderDiscount;
     }
 
     public static class Builder{
         private int _fullPrice;
         private double _childDiscount;
-        private double _freeDiscount;
+        private double _elderDiscount;
 
         Builder(int price)
         {
@@ -28,9 +26,9 @@ public class TicketFactory {
             _childDiscount=cDiscount;
             return this;
         }
-        public Builder set_freeDiscount(double fDiscount)
+        public Builder set_elderDiscount(double fDiscount)
         {
-            _freeDiscount=fDiscount;
+            _elderDiscount=fDiscount;
             return this;
         }
         public TicketFactory build()
@@ -57,8 +55,8 @@ public class TicketFactory {
                 return new ChildTicket(_fullPrice,_childDiscount);
             case "ADULT":
                 return new AdultTicket(_fullPrice);
-            case "FREE":
-                return new FreeTicket(_fullPrice,_freeDiscount);
+            case "ELDER":
+                return new ElderTicket(_fullPrice,_elderDiscount);
             default:
                 return null;
         }
