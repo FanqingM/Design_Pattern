@@ -1,8 +1,6 @@
 package musementpark.offline.entertainment.command;
 
-import musementpark.offline.base.security.composite.Component;
-import musementpark.offline.base.security.visitor.Visitor;
-import musementpark.offline.entertainment.list.composite.Leaf;
+import musementpark.offline.base.composite.Component;
 import musementpark.offline.entertainment.memento.Memento;
 
 /*

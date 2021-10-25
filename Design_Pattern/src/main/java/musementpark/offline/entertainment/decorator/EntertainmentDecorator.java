@@ -1,7 +1,7 @@
 package musementpark.offline.entertainment.decorator;
 
-import musementpark.offline.base.security.composite.Component;
-import musementpark.offline.base.security.visitor.Visitor;
+import musementpark.offline.base.composite.Component;
+import musementpark.offline.base.visitor.Visitor;
 
 public abstract class EntertainmentDecorator extends Facility {
     private Facility aBattercake;

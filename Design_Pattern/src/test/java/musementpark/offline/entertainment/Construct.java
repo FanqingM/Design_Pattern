@@ -1,8 +1,8 @@
 package musementpark.offline.entertainment;
 
-import musementpark.offline.entertainment.list.composite.Component;
-import musementpark.offline.entertainment.list.composite.Composite;
-import musementpark.offline.entertainment.list.composite.Leaf;
+import musementpark.offline.entertainment.composite.Component;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 
 public class Construct {
     public Component ConstrucEntermainment () {

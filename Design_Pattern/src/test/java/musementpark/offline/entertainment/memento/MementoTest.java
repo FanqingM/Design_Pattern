@@ -1,12 +1,10 @@
 package musementpark.offline.entertainment.memento;
 
-import musementpark.offline.base.security.composite.Component;
-import musementpark.offline.base.security.composite.Composite;
-import musementpark.offline.base.security.composite.Leaf;
+import musementpark.offline.base.composite.Component;
+import musementpark.offline.base.composite.Composite;
+import musementpark.offline.base.composite.Leaf;
 import musementpark.offline.entertainment.command.Entertainment;
 import musementpark.offline.entertainment.command.*;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MementoTest {
     public static void main(String[] args) {
