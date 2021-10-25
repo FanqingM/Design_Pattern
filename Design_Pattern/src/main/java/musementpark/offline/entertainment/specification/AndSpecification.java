@@ -2,28 +2,30 @@ package musementpark.offline.entertainment.specification;
 
 
 
-/**
- * @param <T> 进行规约的类
- *            <p>
- *            两个规约进行链式操作 and 后产生的规约
- * @author HR8398Cephei
- */
-public class AndSpecification<T> extends CompositeSpecification<T> {
 
-    private final Specification<T> spec1;
+public class AndSpecification extends CompositeSpecification {
+    // 传递两个规格书进行and操作
+    private ISpecification left;
+    private ISpecification right;
 
-    private final Specification<T> spec2;
-
-    public AndSpecification(Specification<T> spec1, Specification<T> spec2) {
-        this.spec1 = spec1;
-        this.spec2 = spec2;
+    public AndSpecification(ISpecification left, ISpecification right) {
+        this.left = left;
+        this.right = right;
     }
 
     @Override
-    public boolean isSatisfiedBy(T t) {
-        boolean res = spec1.isSatisfiedBy(t) && spec2.isSatisfiedBy(t);
-
-
-        return res;
+    public boolean isSatisfiedBy(Visitor visitor) {
+        boolean res = this.left.isSatisfiedBy(visitor) && this.right.isSatisfiedBy(visitor);
+        if(res)
+        {
+            System.out.println(visitor.name + "通过");
+        }
+        else
+        {
+            System.out.println(visitor.name + "不通过");
+        }
+        return this.left.isSatisfiedBy(visitor) && this.right.isSatisfiedBy(visitor);
     }
+
 }
+

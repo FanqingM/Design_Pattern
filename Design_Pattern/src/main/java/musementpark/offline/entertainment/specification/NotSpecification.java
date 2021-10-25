@@ -2,25 +2,28 @@ package musementpark.offline.entertainment.specification;
 
 
 
-/**
- * @author HR8398Cephei
- * @param <T> 进行规约的类
- *
- * 规约进行链式操作 not 后产生的规约
- */
-public class NotSpecification<T> extends CompositeSpecification<T> {
 
-    private final Specification<T> spec;
+public class NotSpecification extends CompositeSpecification {
+    // 传递一个规格书
+    private ISpecification spec;
 
-    public NotSpecification(Specification<T> spec) {
+    public NotSpecification(ISpecification spec) {
         this.spec = spec;
     }
 
     @Override
-    public boolean isSatisfiedBy(T t) {
-        boolean res = !spec.isSatisfiedBy(t);
-
-
-        return res;
+    public boolean isSatisfiedBy(Visitor visitor) {
+        boolean res = !this.isSatisfiedBy(visitor);
+        if(res)
+        {
+            System.out.println(visitor.name + "通过");
+        }
+        else
+        {
+            System.out.println(visitor.name + "不通过");
+        }
+        return !this.isSatisfiedBy(visitor);
     }
+
 }
+
