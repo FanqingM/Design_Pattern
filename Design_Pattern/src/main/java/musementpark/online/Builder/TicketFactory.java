@@ -50,7 +50,7 @@ public class TicketFactory {
         return _singleton;
     }
 
-    public Ticket addTicket(String type,Visitor owner)
+    public Ticket getTicket(String type,Visitor owner)
     {
         switch (type.toUpperCase()) {
             case "CHILD":

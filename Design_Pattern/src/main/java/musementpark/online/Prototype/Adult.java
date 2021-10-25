@@ -11,4 +11,9 @@ public class Adult extends Visitor{
     public Adult clone() {
         return new Adult(1);
     }
+
+    @Override
+    public boolean isNull() {
+        return false;
+    }
 }

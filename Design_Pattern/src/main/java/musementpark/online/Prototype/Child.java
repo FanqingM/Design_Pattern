@@ -11,4 +11,9 @@ public class Child extends Visitor{
     public Child clone() {
         return new Child(1);
     }
+
+    @Override
+    public boolean isNull() {
+        return false;
+    }
 }

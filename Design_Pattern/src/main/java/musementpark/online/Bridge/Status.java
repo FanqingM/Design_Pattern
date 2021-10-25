@@ -1,5 +1,6 @@
 package musementpark.online.Bridge;
 
-public interface Status {
-    public double getDiscount();
+public abstract class Status {
+    public static int minConsumption = 0;
+    public abstract double getDiscount();
 }

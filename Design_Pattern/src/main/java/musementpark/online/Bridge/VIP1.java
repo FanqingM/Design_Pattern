@@ -1,6 +1,9 @@
 package musementpark.online.Bridge;
 
-public class VPI1 implements Status {
+public class VIP1 extends Status {
+    static {
+        minConsumption=100;
+    }
 
     @Override
     public double getDiscount() {

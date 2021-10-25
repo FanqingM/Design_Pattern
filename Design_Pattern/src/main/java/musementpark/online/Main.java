@@ -35,45 +35,7 @@ class AccessingAllClassesInPackage {
 
 public class Main {
 
-//    public static void test_Singleton()
-//    {
-//        FactoryProducer.getFactory("adult");
-//        FactoryProducer.getFactory("child");
-//    }
-//
-//    public static void test_Prototype()
-//    {
-//        //直接测试
-//        Visitor visitor=Visitor.findAndClone("adult");
-//    }
-//
-//    public static void test_AbstractFactory()
-//    {
-//        AbstractFactory myFactory = FactoryProducer.getFactory("adult");
-//        Visitor visitor = myFactory.getVisitor();
-//    }
-//
-//    public static void test_Bridge()
-//    {
-//        AbstractFactory myFactory = FactoryProducer.getFactory("adult");
-//
-//        Visitor visitor=myFactory.getVisitor();
-//
-//        System.out.println(visitor.getClass().getName());
-//
-//        myFactory.setPlayRestrict(visitor);
-//
-//        visitor.playKarting();
-//    }
-
     public static void main(String[] args) throws ClassNotFoundException {
         AccessingAllClassesInPackage.findAllClassesUsingClassLoader("Online.Prototype_Bridge.Visitor");
-//
-
-//
-//        visitor.playWhirligig();
-//        test_Singleton();
-//        test_Prototype();
-//        test_AbstractFactory();
     }
 }

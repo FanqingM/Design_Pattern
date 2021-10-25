@@ -23,9 +23,12 @@ public abstract class Visitor {
     public abstract Visitor clone();
 
 
-    protected Status status = new Common();
-    public void setStatus()
+    public int cost = 0;
+    protected Status _status = new Common();
+    public void setStatus(Status status)
     {
-
+        _status=status;
     }
+
+    public abstract boolean isNull();
 }
