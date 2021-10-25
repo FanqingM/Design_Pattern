@@ -1,5 +1,6 @@
 # Design_Pattern
 
+## 本项目JDK版本是1.8
 **online 的那个package我忘了建了，他在main底下与offline和util时同级的package**
 
 ## git合作流程
@@ -11,8 +12,9 @@
 这里我们采用了checkstyle插件，我们当然可以使用现成的google test 或者 alibaba test，但是其要求过于严格，我们可以先按照我下面所列的简单代码规范进行编写，当项目具备一定雏形时我们可以独自编写xml文件导入checkstyle
 
 ### 我们的代码规范
+- 包名全小写，类名大驼峰，方法名和变量名都小驼峰
 - 关于包的结构如项目中所示，您需要在您对应的包里进行开发，您需要在您给定的分区底下建立包，并在这个包底下新建class or interface等文件进行开发，在test文件夹中生成对应test的class的方法请自行上网查找
-- 您的输出语句需要尽可能的调用工具包（util）中的Log以及LogInfo函数来保证我们输出格式的规范，具体使用请看关于chair的例子
+- ~~您的输出语句需要尽可能的调用工具包（util）中的Log以及LogInfo函数来保证我们输出格式的规范，具体使用请看关于chair的例子~~,暂时不需要这个，就先都用sout
 - 您在新建一个文件（包括main中和test中）的时候，需要在package与import之间指出author和该文件的description，具体请看chair的例子
 - 您在每新建一个函数的时候，需要在函数前给出注释，表明该函数的功能
 - 现阶段您只需要关注src文件夹下的main下的java以及test下的java，并不需要关心其他。所以请勿修改build.gardle或者setting.gradle文件以及我们.idea中的配置文件，如果有需求请群内指出
