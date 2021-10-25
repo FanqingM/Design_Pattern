@@ -27,7 +27,7 @@ public class Visitor extends Thread {
         }
         catch (Exception e){
             e.printStackTrace();
-        } finally {
+        } finally {  
             lock.release();
             String msg2 = rides.name + " is played by " + name;
             System.out.println(msg2);
