@@ -1,14 +1,9 @@
 package musementpark.online.Builder;
 
-import musementpark.online.Prototype.Visitor;
-
 public abstract class Ticket {
     private int _fullPrice;
-    private Visitor _owner;
-
-    public Ticket(Visitor owner,int price){
+    public Ticket(int price){
         this._fullPrice=price;
-        this._owner=owner;
     }
 
     protected int getFullPrice(){
@@ -16,4 +11,9 @@ public abstract class Ticket {
     }
     public abstract double calPrice();
 
+    public abstract String getInfo();
+    public void showInfo()
+    {
+        System.out.println(getInfo()+",总价是"+calPrice());
+    }
 }

@@ -13,6 +13,11 @@ public class Child extends Visitor{
     }
 
     @Override
+    public void getStatus() {
+        System.out.println("child的地位是"+_status.getClass().getSimpleName()+",对应折扣是"+_status.getDiscount());
+    }
+
+    @Override
     public boolean isNull() {
         return false;
     }

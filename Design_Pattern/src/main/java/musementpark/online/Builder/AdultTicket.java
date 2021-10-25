@@ -1,14 +1,17 @@
 package musementpark.online.Builder;
 
-import musementpark.online.Prototype.Visitor;
-
 public class AdultTicket extends Ticket{
-    AdultTicket(Visitor owner,int price) {
-        super(owner,price);
+    AdultTicket(int price) {
+        super(price);
     }
 
     @Override
     public double calPrice() {
-        return 0;
+        return getFullPrice();
+    }
+
+    @Override
+    public String getInfo() {
+        return "AdultTicket的price是"+getFullPrice();
     }
 }

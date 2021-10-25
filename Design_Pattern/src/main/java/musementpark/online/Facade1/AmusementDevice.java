@@ -12,6 +12,7 @@ public abstract class AmusementDevice {
 
     public void queueUp(Visitor visitor)
     {
+        System.out.println(visitor.getClass().getSimpleName()+"加入队伍");
         _queue.add(visitor);
     }
     public void run()

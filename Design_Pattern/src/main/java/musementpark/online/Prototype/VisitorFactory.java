@@ -1,14 +1,14 @@
 package musementpark.online.Prototype;
 
 public class VisitorFactory {
-    private VisitorFactory _singleton = new VisitorFactory();
+    private static VisitorFactory _singleton = new VisitorFactory();
     private VisitorFactory(){}
-    public VisitorFactory getInstance()
+    public static VisitorFactory getInstance()
     {
         return _singleton;
     }
 
-    Visitor getVisitor(String type)
+    public Visitor getVisitor(String type)
     {
         Visitor result = Visitor.findAndClone(type);
         if(result==null)

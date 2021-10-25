@@ -1,9 +1,7 @@
 package musementpark.online.Bridge;
 
 public class Common extends Status {
-    static {
-        minConsumption = 0;
-    }
+    public static final int minConsumption = 0;
 
     @Override
     public double getDiscount() {

@@ -1,16 +1,19 @@
 package musementpark.online.Builder;
 
-import musementpark.online.Prototype.Visitor;
-
 public class ChildTicket extends Ticket{
     private double _discount;
-    ChildTicket(Visitor owner,int price,double discount) {
-        super(owner,price);
+    ChildTicket(int price,double discount) {
+        super(price);
         this._discount=discount;
     }
 
     @Override
     public double calPrice() {
         return getFullPrice()*_discount;
+    }
+
+    @Override
+    public String getInfo() {
+        return "ChildTicket的price是"+getFullPrice()+",折扣是"+_discount;
     }
 }

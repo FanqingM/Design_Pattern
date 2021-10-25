@@ -50,15 +50,15 @@ public class TicketFactory {
         return _singleton;
     }
 
-    public Ticket getTicket(String type,Visitor owner)
+    public Ticket getTicket(String type)
     {
         switch (type.toUpperCase()) {
             case "CHILD":
-                return new ChildTicket(owner,_fullPrice,_childDiscount);
+                return new ChildTicket(_fullPrice,_childDiscount);
             case "ADULT":
-                return new AdultTicket(owner,_fullPrice);
+                return new AdultTicket(_fullPrice);
             case "FREE":
-                return new FreeTicket(owner,_fullPrice,_freeDiscount);
+                return new FreeTicket(_fullPrice,_freeDiscount);
             default:
                 return null;
         }

@@ -1,9 +1,7 @@
 package musementpark.online.Bridge;
 
 public class VIP1 extends Status {
-    static {
-        minConsumption=100;
-    }
+    public static final int minConsumption = 100;
 
     @Override
     public double getDiscount() {
