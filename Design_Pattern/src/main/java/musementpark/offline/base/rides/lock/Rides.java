@@ -4,7 +4,7 @@ public class Rides {
 
     public int num;
     public String name;
-    private int count;
+    private final int count;
     private final Lock lock;
 
 
@@ -16,24 +16,18 @@ public class Rides {
     }
 
     public boolean peoplep() {
-        boolean success = false;
         if (num>0) {
             num=num-1;
-            success = true;
-            return success;
+            return true;
         }
         else{
             return false;
         }
     }
 
-    public boolean peopled() {
-        boolean success = false;
+    public void peopled() {
         num=count;
-        success = true;
-        return success;
     }
-
     public void playing(){
         try{
             lock.acquire();

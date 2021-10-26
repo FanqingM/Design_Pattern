@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="musementpark.offline.base.rides.lock.LockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-25T16:57:29" hostname="LAPTOP-OH8EUPFU" time="0.013">
+<testsuite name="musementpark.offline.base.rides.lock.LockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-26T02:55:15" hostname="LAPTOP-OH8EUPFU" time="0.036">
   <properties/>
-  <testcase name="testLock()" classname="musementpark.offline.base.rides.lock.LockTest" time="0.013"/>
-  <system-out><![CDATA[p2 buys a pengpengche ticket
-p6 buys a pengpengche ticket
-p1 buys a pengpengche ticket
-pengpengche is played by p6
+  <testcase name="testLock()" classname="musementpark.offline.base.rides.lock.LockTest" time="0.036"/>
+  <system-out><![CDATA[p2 buys a dodgem ticket
+p1 buys a dodgem ticket
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
