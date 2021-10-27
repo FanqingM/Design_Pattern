@@ -9,7 +9,7 @@ public class Ticket implements Pticket {
     private int ticket_number;
 
     /**
-     * 构造函数
+     *
      * @param ticket_number
      */
     public Ticket(int ticket_number){
@@ -17,7 +17,7 @@ public class Ticket implements Pticket {
     }
 
     /**
-     * 进行实际买票的操作
+     *
      */
     @Override
     public void display() {

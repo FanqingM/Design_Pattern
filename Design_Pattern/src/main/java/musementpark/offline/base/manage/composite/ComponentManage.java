@@ -12,7 +12,7 @@ public abstract class ComponentManage {
     private String content;
 
     /**
-     * 构造函数
+     *
      * @param position
      * @param content
      */
@@ -22,7 +22,7 @@ public abstract class ComponentManage {
     }
 
     /**
-     * 输出不同职位人的特征
+     *
      */
     public void dowork(){
         System.out.println("I am "+position+",I can "+content);

@@ -2,7 +2,7 @@ package musementpark.offline.base.rides.lock;
 
 /**
  * author:1952396
- * description:游乐设施类
+ * description:
  */
 
 public class Rides {
@@ -13,7 +13,7 @@ public class Rides {
     private final Lock lock;
 
     /**
-     * 游乐设施的构造
+     *
      * @param num
      * @param name
      * @param lock
@@ -26,7 +26,7 @@ public class Rides {
     }
 
     /**
-     * 游客游玩游乐设施,座位减少
+     *
      * @return
      */
     public boolean peoplep() {
@@ -40,14 +40,14 @@ public class Rides {
     }
 
     /**
-     * 游玩结束，游客离开，释放座位
+     *
      */
     public void peopled() {
         num=count;
     }
 
     /**
-     * 游乐设施正在运行时锁住，不允许游玩者进入游乐设施
+     *
      */
     public void playing(){
         try{

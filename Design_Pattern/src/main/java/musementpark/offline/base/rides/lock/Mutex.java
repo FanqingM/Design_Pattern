@@ -2,14 +2,14 @@ package musementpark.offline.base.rides.lock;
 
  /**
  * author:1952396
- * description:互斥锁的实现
+ * description:
  */
 
 public class Mutex implements Lock{
     private Object owner;
 
      /**
-      * acquire函数的实现
+      * acquire
       * @throws InterruptedException
       */
     @Override
@@ -22,7 +22,7 @@ public class Mutex implements Lock{
     }
 
      /**
-      * release函数的实现
+      * release
       */
     @Override
     public synchronized void release() {
@@ -33,7 +33,7 @@ public class Mutex implements Lock{
     }
 
      /**
-      * 构造互斥对象
+      *
       * @return
       */
     public Object getOwner(){

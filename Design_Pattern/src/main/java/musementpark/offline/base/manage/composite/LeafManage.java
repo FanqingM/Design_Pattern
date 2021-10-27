@@ -7,7 +7,7 @@ package musementpark.offline.base.manage.composite;
 
 public class LeafManage extends ComponentManage {
     /**
-     * 构造函数
+     *
      * @param position
      * @param content
      */
@@ -16,7 +16,7 @@ public class LeafManage extends ComponentManage {
     }
 
     /**
-     * 底层人员输出position&content
+     *
      */
     @Override
     public void check() {

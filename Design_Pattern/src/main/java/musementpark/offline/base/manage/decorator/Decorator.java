@@ -14,7 +14,7 @@ public class Decorator extends ComponentManage {
     private String deco;
 
     /**
-     * 构造函数
+     *
      * @param position
      * @param content
      * @param deco
@@ -25,7 +25,7 @@ public class Decorator extends ComponentManage {
     }
 
     /**
-     * 输出装饰语句
+     *
      */
     public void setDeco() {
         dowork();
@@ -33,7 +33,7 @@ public class Decorator extends ComponentManage {
     }
 
     /**
-     * 对于check函数decorator不必调用
+     *
      */
     @Override
     public void check() {}

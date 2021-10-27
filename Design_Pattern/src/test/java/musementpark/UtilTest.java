@@ -1,13 +1,10 @@
-package musementpark.online.ticket;
-
+package musementpark;
 
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;
-import org.junit.jupiter.api.Test;
 
-public class TicketTest {
-    @Test
-    void testTicket() {
+public class UtilTest {
+    public static void main(String[] args) {
         Print.print(
                 new PrintInfo(
                         "classname",
@@ -16,7 +13,5 @@ public class TicketTest {
                         "description"
                 )
         );
-        Pticket pticket =new ProxyTicket(2);
-        pticket.display();
     }
 }

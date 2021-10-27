@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="musementpark.offline.base.rides.lock.LockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-26T04:24:27" hostname="LAPTOP-OH8EUPFU" time="0.036">
-  <properties/>
-  <testcase name="testLock()" classname="musementpark.offline.base.rides.lock.LockTest" time="0.036"/>
-  <system-out><![CDATA[p2 buys a dodgem ticket
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

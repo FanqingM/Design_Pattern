@@ -14,7 +14,7 @@ public class CompositeManage extends ComponentManage{
     private List<ComponentManage> componentmanages =new ArrayList<>();
 
     /**
-     * 构造函数
+     *
      * @param position
      * @param content
      */
@@ -23,7 +23,7 @@ public class CompositeManage extends ComponentManage{
     }
 
     /**
-     * 增加人员
+     *
      * @param componentmanage
      */
     public void addComponent(ComponentManage componentmanage){
@@ -31,7 +31,7 @@ public class CompositeManage extends ComponentManage{
     }
 
     /**
-     * 减少人员
+     *
      * @param componentmanage
      */
     public void removeComponent(ComponentManage componentmanage){
@@ -39,7 +39,7 @@ public class CompositeManage extends ComponentManage{
     }
 
     /**
-     * 依次输出不同人员的position&content
+     *
      */
     @Override
     public void check(){
