@@ -1,6 +1,8 @@
 package musementpark.offline.entertainment.objectpool;
+
 /**
- * 内部使用的用于保存对象池中对象的类。
+ * author:CaoHS
+ * description:内部使用的用于保存对象池中对象的类。
  */
 public class PooledObject {
 
@@ -8,9 +10,7 @@ public class PooledObject {
     boolean isBusy = false; // 此对象是否正在使用
 
     public PooledObject(Shooting shooting) {
-
         this.shooting = shooting;
-
     }
 
     public Shooting getShooting() {
@@ -19,14 +19,13 @@ public class PooledObject {
 
     public void setShooting(Shooting shooting) {
         this.shooting = shooting;
-
     }
 
     public boolean isBusy() {
         return isBusy;
     }
 
-    public void setBusy(boolean busy) {
-        this.isBusy = busy;
+    public void setBusy(boolean isBusy) {
+        this.isBusy = isBusy;
     }
 }
