@@ -12,15 +12,6 @@ public class blackboardTest {
         @Test
         public void blackboardtest() {
                 Blackboard blackboard = new Blackboard(new Resource("公告0"));
-                String objectId=String.valueOf(System.identityHashCode(this));
-                Print.print(
-                        new PrintInfo(
-                                "公示栏黑板测试类",
-                                objectId,
-                                "黑板模式",
-                                "description"
-                        )
-                );
                 BlackboardController controller = new BlackboardController(blackboard);
                 Resource resource1=new Resource("公告1");
                 controller.add(resource1);

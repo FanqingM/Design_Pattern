@@ -1,4 +1,8 @@
 package musementpark.online.blackboard;
+
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author:CaoHS
  * description:黑板控制类
@@ -15,6 +19,15 @@ public class BlackboardController {
 	 * 展示黑板所有内容
 	 */
 	public void executeAll() {
+		String objectId=String.valueOf(System.identityHashCode(this));
+		Print.print(
+				new PrintInfo(
+						"公示栏黑板测试类",
+						objectId,
+						"黑板模式",
+						"description"
+				)
+		);
 		for (Resource resource : blackboard.resources) {
 			resource.executeAction();			
 		}
