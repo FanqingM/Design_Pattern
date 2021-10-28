@@ -22,10 +22,6 @@ public class Macro {
     public void removeCommand(EntertainmentCommand dc) {
         myCommands.remove(dc);
     }
-//    public void createMemento() {
-//        memento = new Memento();
-//
-//    }
     public void execute() {
         for(EntertainmentCommand dc: myCommands) {
             dc.execute();

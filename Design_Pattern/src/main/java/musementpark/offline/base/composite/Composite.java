@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 组合节点（相当于ConcreteElement）
- * @date 2016年2月29日
+ * author：FanqingM
+ * description：。。。。。。
  */
 public class Composite extends Component {
 
@@ -22,7 +22,10 @@ public class Composite extends Component {
         this.name = name;
     }
 
-
+    /**
+     * 对于函数的功能描述
+     * @param visitor
+     */
     @Override
     public void accept(Visitor visitor) {
         visitor.visitComposite(this);

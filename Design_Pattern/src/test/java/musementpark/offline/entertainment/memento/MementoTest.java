@@ -36,14 +36,7 @@ class MementoTest {
         myMacro.addCommand(new LightCommand(entertain));
         EntertainmentCommand cc = new CloseCommand(entertain);
         myMacro.execute();
-        //这里应该用宏命令创建备忘录
         Memento m = entertain.createMemento();
-        System.out.println(m.volume);
-        System.out.println(m.light);
-        System.out.println(m.isOpen);
-        System.out.println(m.getState().volume);
-        System.out.println(m.getState().light);
-        System.out.println(m.getState().isOpen);
         mementoStack.add(m);
 
         System.out.println("存档状态");

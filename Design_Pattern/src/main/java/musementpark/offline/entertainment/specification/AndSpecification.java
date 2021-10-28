@@ -1,7 +1,8 @@
 package musementpark.offline.entertainment.specification;
 
 
-
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 public class AndSpecification extends CompositeSpecification {
     // 传递两个规格书进行and操作
@@ -18,11 +19,25 @@ public class AndSpecification extends CompositeSpecification {
         boolean res = this.left.isSatisfiedBy(visitor) && this.right.isSatisfiedBy(visitor);
         if(res)
         {
-            System.out.println(visitor.name + "通过");
+            Print.print(
+                    new PrintInfo(
+                            "AndSpecification",
+                            String.valueOf(System.identityHashCode(this)),
+                            "isSatisfiedBy",
+                            visitor.name + "通过"
+                    )
+            );
         }
         else
         {
-            System.out.println(visitor.name + "不通过");
+            Print.print(
+                    new PrintInfo(
+                            "AndSpecification",
+                            String.valueOf(System.identityHashCode(this)),
+                            "isSatisfiedBy",
+                            visitor.name + "不通过"
+                    )
+            );
         }
         return this.left.isSatisfiedBy(visitor) && this.right.isSatisfiedBy(visitor);
     }
