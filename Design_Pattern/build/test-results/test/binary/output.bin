@@ -1,6 +1,42 @@
-男装
-女装
-衬衣
-夹克
-裙子
-套装
+
+Print:
+"	className = Component（Leaf）;
+	objectId = 1993955286;
+	methodName = handle;
+^	description = 清洁工管理部门无法解决了一个难度为 50 的 bug，传给上级;
+
+
+Print:
+'	className = Component（Composite）;
+	objectId = 620823328;
+	methodName = handle;
+U	description = 管理部门无法解决了一个难度为 50 的 bug，传给上级;
+
+
+Print:
+'	className = Component（Composite）;
+	objectId = 1868639924;
+	methodName = solve;
+C	description = 总管理部门解决了一个难度为 50 的 bug;
+
+
+Print:
+"	className = Component（Leaf）;
+	objectId = 1993955286;
+	methodName = handle;
+_	description = 清洁工管理部门无法解决了一个难度为 200 的 bug，传给上级;
+
+
+Print:
+'	className = Component（Composite）;
+	objectId = 620823328;
+	methodName = handle;
+V	description = 管理部门无法解决了一个难度为 200 的 bug，传给上级;
+
+
+Print:
+'	className = Component（Composite）;
+	objectId = 1868639924;
+	methodName = handle;
+W	description = 总管理部门无法解决了一个难度为 200，该bug无法解决;
+
