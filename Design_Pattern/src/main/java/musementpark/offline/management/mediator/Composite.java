@@ -2,6 +2,8 @@ package musementpark.offline.management.mediator;
 
 
 import musementpark.offline.management.chain.Bug;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +27,7 @@ public class Composite extends Component {
 
     public Composite(String name) {
         super();
+        super.name = name;
         this.name = name;
     }
     private void solve(Bug bug) {
@@ -66,7 +69,14 @@ public class Composite extends Component {
     }
     @Override
     public void operation() {
-        System.out.println(this.name + "的一些操作");
+        Print.print(
+                new PrintInfo(
+                        "Composite(Component)",
+                        String.valueOf(System.identityHashCode(this)),
+                        "operation",
+                        this.name + "进行一些操作"
+                )
+        );
     }
     public void notifyColleagueA() {
         mediator.notifyColleagueA();

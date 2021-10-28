@@ -9,7 +9,7 @@ import musementpark.offline.management.chain.Bug;
  */
 public abstract class Component {
     protected Mediator mediator;
-
+    public String name;
     public void setMediator(Mediator mediator) {
         this.mediator = mediator;
     }

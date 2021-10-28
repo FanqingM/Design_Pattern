@@ -2,6 +2,8 @@ package musementpark.offline.management.mediator;
 
 
 import musementpark.offline.management.chain.Bug;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 /**
  * 叶子节点（相当于ConcreteElement）
@@ -14,6 +16,7 @@ public class Leaf extends Component {
 
     public Leaf(String name) {
         super();
+        super.name = name;
         this.name = name;
     }
     @Override
@@ -41,7 +44,14 @@ public class Leaf extends Component {
     }
     @Override
     public void operation() {
-        System.out.println(this.name + "的一些操作");
+        Print.print(
+                new PrintInfo(
+                        "Leaf(Component)",
+                        String.valueOf(System.identityHashCode(this)),
+                        "operation",
+                        this.name + "进行一些操作"
+                )
+        );
     }
     public void notifyColleagueB() {
         mediator.notifyColleagueB();

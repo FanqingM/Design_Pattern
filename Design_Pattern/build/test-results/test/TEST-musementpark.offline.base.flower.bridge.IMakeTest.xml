@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.base.flower.bridge.IMakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-28T15:03:54" hostname="fanqing-mdeMacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="plantTest()" classname="musementpark.offline.base.flower.bridge.IMakeTest" time="0.002"/>
+  <system-out><![CDATA[栽种红菊花
+栽种黄菊花
+栽种红梅花
+栽种黄梅花
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
