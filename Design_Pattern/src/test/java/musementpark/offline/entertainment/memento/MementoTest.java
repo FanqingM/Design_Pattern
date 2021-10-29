@@ -1,8 +1,8 @@
 package musementpark.offline.entertainment.memento;
 
-import musementpark.offline.base.composite.Component;
-import musementpark.offline.base.composite.Composite;
-import musementpark.offline.base.composite.Leaf;
+import musementpark.offline.entertainment.composite.Component;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 import musementpark.offline.entertainment.command.Entertainment;
 import musementpark.offline.entertainment.command.*;
 

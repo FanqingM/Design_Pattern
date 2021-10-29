@@ -1,15 +1,11 @@
 package musementpark.offline.entertainment.composite;
 
 import org.junit.jupiter.api.Test;
-import musementpark.offline.entertainment.Construct;
 
 class CompositeTest {
     @Test
     //对于客户端而言，操作的都是组件对象。
     public void compositeTest() {
-//        Construct entertainment = new Construct();
-//        Component root = entertainment.ConstrucEntermainment();
-        //创建一个树状结构
         Component root = new Composite("娱乐区");
 
         Component c1 = new Composite("高空");
@@ -25,7 +21,8 @@ class CompositeTest {
         Component lf3 = new Leaf("旋转木马");
         Component lf4 = new Leaf("鬼屋");
         c2.addChild(lf3);
+        c2.removeChild(lf3);
+        c2.addChild(lf3);
         c2.addChild(lf4);
-        root.printStruct("");
     }
 }

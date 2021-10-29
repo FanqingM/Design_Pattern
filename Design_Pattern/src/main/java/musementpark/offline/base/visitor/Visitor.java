@@ -1,6 +1,6 @@
 package musementpark.offline.base.visitor;
-import musementpark.offline.base.composite.Composite;
-import musementpark.offline.base.composite.Leaf;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 
 /**
  * 访问者接口

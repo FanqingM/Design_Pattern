@@ -1,21 +1,56 @@
 
 Print:
-	className = FenceDecorator;
-	objectId = 1993955286;
-	methodName = FenceDecorator;
-*	description = 摩天轮 加一边围栏;
+	className = Composite;
+	objectId = 1521929235;
+	methodName = addChild;
+,	description = 娱乐区添加孩子高空;
 
 
 Print:
-	className = FenceDecorator;
-	objectId = 620823328;
-	methodName = FenceDecorator;
-:	description = 摩天轮 加一边围栏 加一边围栏;
+	className = Composite;
+	objectId = 1521929235;
+	methodName = addChild;
+,	description = 娱乐区添加孩子陆地;
 
 
 Print:
-	className = TimeDecorator;
-	objectId = 1868639924;
-	methodName = TimeDecorator;
-J	description = 摩天轮 加一边围栏 加一边围栏 加计时功能;
+	className = Composite;
+	objectId = 1076985615;
+	methodName = addChild;
+,	description = 高空添加孩子摩天轮;
+
+
+Print:
+	className = Composite;
+	objectId = 1076985615;
+	methodName = addChild;
+,	description = 高空添加孩子过山车;
+
+
+Print:
+	className = Composite;
+	objectId = 1371463804;
+	methodName = addChild;
+/	description = 陆地添加孩子旋转木马;
+
+
+Print:
+	className = Composite;
+	objectId = 1371463804;
+	methodName = removeChild;
+/	description = 陆地移除孩子旋转木马;
+
+
+Print:
+	className = Composite;
+	objectId = 1371463804;
+	methodName = addChild;
+/	description = 陆地添加孩子旋转木马;
+
+
+Print:
+	className = Composite;
+	objectId = 1371463804;
+	methodName = addChild;
+)	description = 陆地添加孩子鬼屋;
 

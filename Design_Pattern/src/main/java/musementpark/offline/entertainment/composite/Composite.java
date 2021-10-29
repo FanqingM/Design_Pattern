@@ -1,59 +1,78 @@
 package musementpark.offline.entertainment.composite;
 
-/*
-author: FanqingM
-description: 非叶子对象
- */
+import musementpark.offline.base.visitor.Visitor;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 组合对象，可以包含其它组合对象或者叶子对象
+ * author：FanqingM
+ * description：。。。。。。
  */
-public class Composite extends Component{
-    /**
-     * 用来存储组合对象中包含的子组件对象
-     */
-    private String name = "";
-    private List<Component> childComponents = null;
-    /**
-     * 组合对象的名字
-     */
-    /**
-     * 构造方法，传入组合对象的名字
-     * @param name 组合对象的名字
-     */
-    public Composite(String name){
+public class Composite extends Component {
+
+    // 名字
+    private String name;
+    // 子节点的集合
+    private List<Component> childComponents = new ArrayList<Component>();
+
+    public Composite(String name) {
+        super();
+        super.name = name;
         this.name = name;
     }
 
+    /**
+     * 对于函数的功能描述
+     * @param visitor
+     */
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitComposite(this);
+        //循环子元素，让子元素也接受访问（子节点也要打印出来）
+        for (Component c : childComponents) {
+            c.accept(visitor);
+        }
+    }
+    @Override
     public String getName() {
         return this.name;
     }
+    @Override
     public void addChild(Component child) {
-        //延迟初始化
-        if (childComponents == null) {
-            childComponents = new ArrayList<Component>();
-        }
         childComponents.add(child);
+        Print.print(
+                new PrintInfo(
+                        "Composite",
+                        String.valueOf(System.identityHashCode(this)),
+                        "addChild",
+                        this.getName() + "添加孩子" + child.getName()
+                )
+        );
     }
-    /**
-     * 输出组合对象自身的结构
-     * @param preStr 前缀，主要是按照层级拼接的空格，实现向后缩进
-     */
-    public void printStruct(String preStr){
-        //先把自己输出去
-        System.out.println(preStr+this.name);
-        //如果还包含有子组件，那么就输出这些子组件对象
-        if(this.childComponents!=null){
-            //然后添加一个空格，表示向后缩进一个空格
-            preStr+=" ";
-            //输出当前对象的子对象了
-            for(Component c : childComponents){
-                //递归输出每个子对象
-                c.printStruct(preStr);
-            }
-        }
+
+    @Override
+    public void removeChild(Component child) {
+        Print.print(
+                new PrintInfo(
+                        "Composite",
+                        String.valueOf(System.identityHashCode(this)),
+                        "removeChild",
+                        this.getName() + "移除孩子" + child.getName()
+                )
+        );
+        childComponents.remove(child);
     }
+
+    @Override
+    public Component getChildren(int index) {
+        return childComponents.get(index);
+    }
+
+//    public String getName() {
+//        return name;
+//    }
+
 }

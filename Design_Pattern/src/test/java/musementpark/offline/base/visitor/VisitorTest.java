@@ -1,8 +1,8 @@
 package musementpark.offline.base.visitor;
 
-import musementpark.offline.base.composite.Component;
-import musementpark.offline.base.composite.Composite;
-import musementpark.offline.base.composite.Leaf;
+import musementpark.offline.entertainment.composite.Component;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 
 class VisitorTest {
     public static void main(String[] args) {

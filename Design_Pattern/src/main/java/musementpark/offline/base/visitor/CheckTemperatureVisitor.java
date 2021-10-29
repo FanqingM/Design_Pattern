@@ -1,8 +1,8 @@
 package musementpark.offline.base.visitor;
 
 
-import musementpark.offline.base.composite.Composite;
-import musementpark.offline.base.composite.Leaf;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;
 

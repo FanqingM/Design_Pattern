@@ -1,6 +1,6 @@
 package musementpark.offline.entertainment.command;
 
-import musementpark.offline.base.composite.Component;
+import musementpark.offline.entertainment.composite.Component;
 import musementpark.offline.entertainment.memento.Memento;
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;

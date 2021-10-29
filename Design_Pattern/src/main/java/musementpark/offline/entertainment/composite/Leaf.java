@@ -1,25 +1,32 @@
 package musementpark.offline.entertainment.composite;
 
-/*
-author: FanqingM
-description: 叶子对象
+import musementpark.offline.base.visitor.Visitor;
+
+/**
+ * 叶子节点（相当于ConcreteElement）
+ * @date 2016年2月29日
  */
 public class Leaf extends Component {
 
-    private String name = "";
-
-    public Leaf(String name){
+    private String name;
+//    public void execute() {
+//
+//    }
+    public Leaf(String name) {
+        super();
+        super.name = name;
         this.name = name;
     }
-
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitLeaf(this);
+    }
+    @Override
     public String getName() {
         return this.name;
     }
-    /**
-     * 输出叶子对象的结构，叶子对象没有子对象，也就是输出叶子对象的名字
-     * @param preStr 前缀，主要是按照层级拼接的空格，实现向后缩进
-     */
-    public void printStruct(String preStr){
-        System.out.println(preStr+name);
-    }
+//    public String getName() {
+//        return name;
+//    }
+
 }

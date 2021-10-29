@@ -1,6 +1,6 @@
 package musementpark.offline.base.visitor;
 
-import musementpark.offline.base.composite.Component;
+import musementpark.offline.entertainment.composite.Component;
 
 public class ObjectStructure {
 
