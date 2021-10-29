@@ -22,9 +22,9 @@ public class BlackboardController {
 		String objectId=String.valueOf(System.identityHashCode(this));
 		Print.print(
 				new PrintInfo(
-						"公示栏黑板测试类",
+						"BlackboardController",
 						objectId,
-						"黑板模式",
+						"Blackboard Pattern",
 						"description"
 				)
 		);

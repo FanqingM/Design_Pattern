@@ -25,9 +25,9 @@ public class User {
         String objectId=String.valueOf(System.identityHashCode(shootingPool));
         Print.print(
                 new PrintInfo(
-                        "射击场对象池类",
+                        "User",
                         objectId,
-                        "对象池模式",
+                        "ObjectPool Pattern",
                         "description"
                 )
         );
@@ -43,9 +43,9 @@ public class User {
        String objectId=String.valueOf(System.identityHashCode(shootingPool));
        Print.print(
                new PrintInfo(
-                       "射击场对象池类",
+                       "User",
                        objectId,
-                       "对象池模式",
+                       "ObjectPool Pattern",
                        "description"
                )
        );
