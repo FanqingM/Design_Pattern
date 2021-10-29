@@ -11,8 +11,12 @@ public class Leaf extends Component {
     public Leaf(String name){
         this.name = name;
     }
-    public void printName() {
-        System.out.println(this.name);
+//    public void printName() {
+//        System.out.println(this.name);
+//    }
+    public String getName() {
+        return this.name;
+    //        System.out.println(this.name);
     }
     /**
      * 输出叶子对象的结构，叶子对象没有子对象，也就是输出叶子对象的名字

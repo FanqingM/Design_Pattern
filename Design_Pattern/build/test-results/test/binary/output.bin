@@ -1,74 +1,21 @@
-游乐设施
- 高空类游乐设施
-  摩天轮
-  过山车
- 陆地类游乐设施
-  旋转木马
-	  鬼屋
- 水面类游乐设施
-  水上乐园
-	  水球
-男装
-女装
-衬衣
-夹克
-裙子
-套装
-
-Print:
-"	className = Component（Leaf）;
-	objectId = 1128105931;
-	methodName = handle;
-^	description = 清洁工管理部门无法解决了一个难度为 50 的 bug，传给上级;
-
-
-Print:
-'	className = Component（Composite）;
-	objectId = 37844305;
-	methodName = handle;
-U	description = 管理部门无法解决了一个难度为 50 的 bug，传给上级;
-
-
-Print:
-'	className = Component（Composite）;
-	objectId = 527400623;
-	methodName = solve;
-C	description = 总管理部门解决了一个难度为 50 的 bug;
-
-
-Print:
-"	className = Component（Leaf）;
-	objectId = 1128105931;
-	methodName = handle;
-_	description = 清洁工管理部门无法解决了一个难度为 200 的 bug，传给上级;
-
-
-Print:
-'	className = Component（Composite）;
-	objectId = 37844305;
-	methodName = handle;
-V	description = 管理部门无法解决了一个难度为 200 的 bug，传给上级;
-
-
-Print:
-'	className = Component（Composite）;
-	objectId = 527400623;
-	methodName = handle;
-W	description = 总管理部门无法解决了一个难度为 200，该bug无法解决;
-
-栽种红菊花
-栽种黄菊花
-栽种红梅花
-栽种黄梅花
-
-	"正常情况栽种菊花和梅花
-
-	冬季只能种梅花
-
-	执行了适配器操作
-
-	冬季栽种梅花
-(This is a message from Printer resource
-The printer message
-(This is a message from Correct resource
-The correct message
+
+Print:
+	className = FenceDecorator;
+	objectId = 1316512866;
+	methodName = FenceDecorator;
+*	description = 摩天轮 加一边围栏;
+
+
+Print:
+	className = FenceDecorator;
+	objectId = 1702932354;
+	methodName = FenceDecorator;
+:	description = 摩天轮 加一边围栏 加一边围栏;
+
+
+Print:
+	className = TimeDecorator;
+	objectId = 1733982539;
+	methodName = TimeDecorator;
+J	description = 摩天轮 加一边围栏 加一边围栏 加计时功能;
+

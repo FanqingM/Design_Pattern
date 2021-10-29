@@ -1,13 +1,15 @@
 package musementpark.offline.entertainment.decorator;
 
-import musementpark.offline.base.composite.Component;
+import musementpark.offline.entertainment.composite.Component;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 import musementpark.offline.base.visitor.Visitor;
 
-public abstract class EntertainmentDecorator extends Facility {
-    private Facility aBattercake;
+public abstract class EntertainmentDecorator extends Component {
+    private Component component;
     public String name;
-    public EntertainmentDecorator(Facility aBattercake) {
-        this.aBattercake = aBattercake;
+    public EntertainmentDecorator(Component component) {
+        this.component = component;
     }
 
     protected abstract void doSomething();
@@ -45,12 +47,8 @@ public abstract class EntertainmentDecorator extends Facility {
         throw new UnsupportedOperationException("对象不支持这个功能！");
     }
     @Override
-    protected String getDesc() {
-        return this.aBattercake.getDesc();
-    }
-    @Override
-    protected int cost() {
-        return this.aBattercake.cost();
+    public String getName() {
+        return this.component.getName();
     }
 
 }

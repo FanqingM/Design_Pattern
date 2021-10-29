@@ -1,15 +1,14 @@
 package musementpark.offline.entertainment.decorator;
+
+import musementpark.offline.entertainment.composite.Component;
+
 /*
 被装饰者
  */
-public class FacilityOriginal extends Facility {
+public class FacilityOriginal extends Component {
     @Override
-    protected String getDesc() {
+    public String getName() {
         return "娱乐设施";
-    }
-    @Override
-    protected int cost() {
-        return 8;
     }
 }
 

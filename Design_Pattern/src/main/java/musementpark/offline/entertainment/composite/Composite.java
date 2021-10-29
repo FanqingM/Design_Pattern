@@ -27,8 +27,12 @@ public class Composite extends Component{
     public Composite(String name){
         this.name = name;
     }
-    public void printName() {
-        System.out.println(this.name);
+//    public void printName() {
+//        System.out.println(this.name);
+//    }
+    public String getName() {
+        return this.name;
+    //        System.out.println(this.name);
     }
     public void addChild(Component child) {
         //延迟初始化

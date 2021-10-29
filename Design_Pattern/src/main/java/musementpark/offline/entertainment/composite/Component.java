@@ -12,8 +12,9 @@ public class Component {
     private String name = "";
     public Component components[];
 
-    public void printName() {
-        System.out.println(this.name);
+    public String getName() {
+        return this.name;
+//        System.out.println(this.name);
     }
     /**
      * 输出组件自身的名称
