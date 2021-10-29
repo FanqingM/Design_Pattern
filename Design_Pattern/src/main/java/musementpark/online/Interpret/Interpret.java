@@ -1,9 +1,17 @@
 package musementpark.online.Interpret;
 
 import java.util.Stack;
-
+/**
+ * author: PandaLYZ
+ * description:该类为Intercept类，在该类中定义了不同操作符的优先级，定义了两个栈，一个操作数栈，一个操作符栈，并规定了运算的相关文法与
+ * 规则，对输入的算术表达式进行逐步分析并得出最终的答案。由此，该类实现了解释器模式，同时支持包含小数的运算，应用于计算一批人买票计算总价的场景
+ */
 public class Interpret {
-
+    /**
+     * description: 该方法用于获取不同的操作符的优先级
+     * @param op 传入相应的运算符
+     * @return 返回该运算符对应的优先级
+     */
     private int getOpsLevel(char op){
         if (op == '+' || op == '-')
             return 1;
@@ -13,7 +21,11 @@ public class Interpret {
             return 0;
     }
 
-
+    /**
+     * description: 该方法进行一步的具体运算，在该方法中实现操作数、操作符入栈出栈的相关操作
+     * @param num 操作数的栈
+     * @param ops 操作符的栈
+     */
     void cal(Stack<Expression> num, Stack<String> ops){
         Expression num2=num.peek();
         num.pop();
@@ -37,6 +49,11 @@ public class Interpret {
         }
     }
 
+    /**
+     * description: 在该方法中定义了操作数的栈和操作符的栈，定义了相应的文法规则，实现了对输入的算数表达式逐位解析并计算的功能
+     * @param expression 输入的算术表达式
+     * @return Double类型的算术表达式的值
+     */
     public Double calculate(String expression)
     {
 

@@ -28,7 +28,7 @@ public class ElderTicket extends Ticket{
 
     /**
      * description: 得到老年票相关信息
-     * @return 返回一个字符串
+     * @return 返回一个字符串，表明老年的票价和折扣
      */
     @Override
     public String getInfo() {
