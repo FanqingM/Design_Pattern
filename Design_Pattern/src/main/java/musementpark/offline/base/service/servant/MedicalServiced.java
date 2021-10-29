@@ -1,13 +1,34 @@
 package musementpark.offline.base.service.servant;
 
-/*
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+/**
 author: hzs
-description: 医疗服务类
+description:医疗服务类
  */
 public class MedicalServiced implements IServiced{
+    private boolean serviced = false;
 
+    /**
+     * 服务是否被执行
+     * @return boolean
+     */
+    public boolean getServiced(){
+        return serviced;
+    }
 
-    public void Serviced(){
-        System.out.println("医疗服务已被雇工执行");
+    /**
+     * 执行服务
+     */
+    public void setServiced(){
+        serviced = true;
+        Print.print(
+                new PrintInfo(
+                        "MedicalServiced",
+                        String.valueOf(System.identityHashCode(this)),
+                        "setServiced",
+                        "医疗服务被执行"
+                )
+        );
     }
 }

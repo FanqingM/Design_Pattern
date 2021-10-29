@@ -1,13 +1,34 @@
 package musementpark.offline.base.service.servant;
 
-/*
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+/**
 author: hzs
-description: 餐饮服务类
+description:食品服务类
  */
 public class FoodServiced implements IServiced{
+    private boolean serviced = false;
 
+    /**
+     * 服务是否被执行
+     * @return boolean
+     */
+    public boolean getServiced(){
+        return serviced;
+    }
 
-    public void Serviced(){
-        System.out.println("餐饮服务已被雇工执行");
+    /**
+     * 执行服务
+     */
+    public void setServiced(){
+        serviced = true;
+        Print.print(
+                new PrintInfo(
+                        "FoodServiced",
+                        String.valueOf(System.identityHashCode(this)),
+                        "setServiced",
+                        "食品服务被执行"
+                )
+        );
     }
 }
