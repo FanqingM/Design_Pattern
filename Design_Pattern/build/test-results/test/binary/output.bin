@@ -1,56 +1,48 @@
 
 Print:
 	className = Composite;
-	objectId = 1521929235;
+	objectId = 1316512866;
 	methodName = addChild;
-,	description = 娱乐区添加孩子高空;
+)	description = 服装添加孩子男装;
 
 
 Print:
 	className = Composite;
-	objectId = 1521929235;
+	objectId = 1316512866;
 	methodName = addChild;
-,	description = 娱乐区添加孩子陆地;
+)	description = 服装添加孩子女装;
 
 
 Print:
 	className = Composite;
-	objectId = 1076985615;
+	objectId = 1702932354;
 	methodName = addChild;
-,	description = 高空添加孩子摩天轮;
+)	description = 男装添加孩子衬衣;
 
 
 Print:
 	className = Composite;
-	objectId = 1076985615;
+	objectId = 1702932354;
 	methodName = addChild;
-,	description = 高空添加孩子过山车;
+)	description = 男装添加孩子夹克;
 
 
 Print:
 	className = Composite;
-	objectId = 1371463804;
+	objectId = 1733982539;
 	methodName = addChild;
-/	description = 陆地添加孩子旋转木马;
+)	description = 女装添加孩子裙子;
 
 
 Print:
 	className = Composite;
-	objectId = 1371463804;
-	methodName = removeChild;
-/	description = 陆地移除孩子旋转木马;
-
-
-Print:
-	className = Composite;
-	objectId = 1371463804;
+	objectId = 1733982539;
 	methodName = addChild;
-/	description = 陆地添加孩子旋转木马;
+)	description = 女装添加孩子套装;
 
-
-Print:
-	className = Composite;
-	objectId = 1371463804;
-	methodName = addChild;
-)	description = 陆地添加孩子鬼屋;
-
+男装
+女装
+衬衣
+夹克
+裙子
+套装
