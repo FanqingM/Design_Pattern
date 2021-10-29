@@ -12,9 +12,9 @@ public class EntertainmentList implements Container {
     public int length = 0;
     @Override
     public Iterator getIterator() {
-        return new SuitTreeIterator();
+        return new EntertainmentIterator();
     }
-    private class SuitTreeIterator implements Iterator {
+    private class EntertainmentIterator implements Iterator {
 
         int index;
 
