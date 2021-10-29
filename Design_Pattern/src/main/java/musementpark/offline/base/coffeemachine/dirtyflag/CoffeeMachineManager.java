@@ -1,15 +1,19 @@
-package musementpark.offline.base.maps.dirtyflag;
+package musementpark.offline.base.coffeemachine.dirtyflag;
 
 
-/*
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
+/**
 author: hzs
-description: 咖啡机管理员类
+description:咖啡机管理员类
  */
 public class CoffeeMachineManager {
     private CoffeeMachine coffeeMachine;
 
-    /*
-     * CoffeeMachineManager构造器
+    /**
+     * 咖啡机管理员构造器
+     * @param coffeeMachine
      */
     public CoffeeMachineManager(CoffeeMachine coffeeMachine){
         this.coffeeMachine=coffeeMachine;
@@ -17,10 +21,18 @@ public class CoffeeMachineManager {
 
 
 
-    /*
-     * 管理员维护并上报维护费用
+    /**
+     *管理员上报咖啡机的维护费用
      */
     public void reportFee(){
-        System.out.println("管理员上报了" + coffeeMachine.getFee() + "的维护费用");
+        Print.print(
+                new PrintInfo(
+                        "CoffeeMachineManager",
+                        String.valueOf(System.identityHashCode(this)),
+                        "reportFee",
+                        "管理员维护咖啡机并上报维护费用"
+                )
+        );
+        System.out.println("管理员维护完成并上报"+coffeeMachine.getFee()+"元的维护费用");
     }
 }
