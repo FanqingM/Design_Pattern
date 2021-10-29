@@ -1,5 +1,8 @@
 package musementpark.online.Interpret;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 import java.util.Stack;
 /**
  * author: PandaLYZ
@@ -56,7 +59,6 @@ public class Interpret {
      */
     public Double calculate(String expression)
     {
-
         Stack<Expression> stackNum=new Stack<>();
         Stack<String> stackOps=new Stack<>();   //Java中char不能作为容器内数据的类型
         String temp;
@@ -149,6 +151,12 @@ public class Interpret {
         while(stackOps.peek().charAt(0)!='#'){
             cal(stackNum,stackOps);
         }
+        Print.print(new PrintInfo(
+                "Interpret",
+                String.valueOf(System.identityHashCode(this)),
+                "calculate",
+                expression+"的结果是: "+stackNum.peek().intercept().toString()
+        ));
         return stackNum.peek().intercept();
     }
 }

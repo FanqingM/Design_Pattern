@@ -1,6 +1,8 @@
 package musementpark.online.Facade;
 
 import musementpark.online.Prototype.Visitor;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 import java.util.Queue;
 
@@ -31,6 +33,11 @@ public class Whirligig extends AmusementDevice{
      */
     @Override
     public void play(Queue<Visitor> visitorList) {
-        System.out.println("正在玩旋转木马");
+        Print.print(new PrintInfo(
+                "Whirligig",
+                String.valueOf(System.identityHashCode(this)),
+                "play",
+                "正在玩旋转木马"
+        ));
     }
 }

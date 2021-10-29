@@ -1,5 +1,8 @@
 package musementpark.online.Facade;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: PandaLYZ
  * description:该类为MechanicalSystem类，其作用是对游乐设施进行机械动作检测，采用单例模式实现
@@ -24,7 +27,12 @@ public class MechanicalSystem {
      * description: 执行机械动作测试，并输出相关语句
      */
     public void doMechanicalTesting(){
-        System.out.println("进行机械动作测试！");
+        Print.print(new PrintInfo(
+                "MechanicalSystem",
+                String.valueOf(System.identityHashCode(this)),
+                "doMechanicalTesting",
+                "进行机械动作测试！"
+        ));
     }
 
 }

@@ -1,5 +1,8 @@
 package musementpark.online.Builder;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: PandaLYZ
  * description:该类为Ticket类型的抽象类，其派生出了AdultTicket、ChildTicket、ElderTicket三个子类
@@ -38,6 +41,11 @@ public abstract class Ticket {
      */
     public void showInfo()
     {
-        System.out.println(getInfo()+",总价是"+calPrice());
+        Print.print(new PrintInfo(
+                "Ticket",
+                String.valueOf(System.identityHashCode(this)),
+                "showInfo",
+                getInfo()+",总价是"+calPrice()
+        ));
     }
 }

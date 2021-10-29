@@ -1,4 +1,8 @@
 package musementpark.online.Prototype;
+
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: DannyXSC
  * description: Adult类继承了Visitor类，表示成人类型的游客，对于游客的生成我们采用了原型模式，将每一种类型的游客都登记在父类中
@@ -26,7 +30,12 @@ public class Adult extends Visitor{
      */
     @Override
     public void getStatus() {
-        System.out.println("adult的地位是"+_status.getClass().getSimpleName()+",对应折扣是"+_status.getDiscount());
+        Print.print(new PrintInfo(
+                "Adult",
+                String.valueOf(System.identityHashCode(this)),
+                "getStatus",
+                "adult的地位是"+_status.getClass().getSimpleName()+",对应折扣是"+_status.getDiscount()
+        ));
     }
     /**
      * description: 该类不是空游客类，所以返回false

@@ -1,5 +1,8 @@
 package musementpark.online.Facade;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: PandaLYZ
  * description:该类为AgingTestSystem类，其作用是对游乐设施进行老化检测，采用单例模式实现
@@ -25,7 +28,12 @@ public class AgingTestSystem {
      */
 
     public void doAgingTest(){
-        System.out.println("进行设备老化检测！");
+        Print.print(new PrintInfo(
+                "AgingTestSystem",
+                String.valueOf(System.identityHashCode(this)),
+                "doAgingTest",
+                "进行设备老化检测！"
+        ));
     }
 
 }

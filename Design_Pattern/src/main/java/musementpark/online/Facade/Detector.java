@@ -1,5 +1,8 @@
 package musementpark.online.Facade;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: PandaLYZ
  * description:该类为Detector类，其是在游乐设施运作前具体执行调用检修相关方法的类
@@ -11,7 +14,12 @@ public class Detector {
      */
     public void detect(AmusementDevice device)
     {
-        System.out.println("正在检修"+device.getClass().getSimpleName());
+        Print.print(new PrintInfo(
+                "Detector",
+                String.valueOf(System.identityHashCode(this)),
+                "detect",
+                "正在检修"+device.getClass().getSimpleName()
+        ));
         OperationAndMaintain_UI ui = OperationAndMaintain_UI.getInstance();
         ui.doMaintenance();
     }

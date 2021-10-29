@@ -2,6 +2,8 @@ package musementpark.online.Facade;
 
 import musementpark.online.Adapter.AmusementQueue;
 import musementpark.online.Prototype.Visitor;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 import java.util.Queue;
 
@@ -20,7 +22,12 @@ public abstract class AmusementDevice {
      */
     public void queueUp(Visitor visitor)
     {
-        System.out.println(visitor.getClass().getSimpleName()+"加入队伍");
+        Print.print(new PrintInfo(
+                "AmusementDevice",
+                String.valueOf(System.identityHashCode(this)),
+                "queueUp",
+                visitor.getClass().getSimpleName()+"加入队伍"
+        ));
         _queue.add(visitor);
     }
 

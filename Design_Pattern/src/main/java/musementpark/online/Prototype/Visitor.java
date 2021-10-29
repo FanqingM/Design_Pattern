@@ -2,6 +2,8 @@ package musementpark.online.Prototype;
 
 import musementpark.online.Bridge.Common;
 import musementpark.online.Bridge.Status;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 import java.util.HashMap;
 /**
@@ -20,7 +22,12 @@ public abstract class Visitor {
     public static Visitor findAndClone(String className)
     {
         if(_prototypes.get(className.toLowerCase())!=null) {
-            System.out.println("已经返回原型的克隆" + _prototypes.get(className.toLowerCase()).getClass().getSimpleName());
+            Print.print(new PrintInfo(
+                    "Visitor",
+                    "0",
+                    "findAndClone",
+                    "已经返回原型的克隆" + _prototypes.get(className.toLowerCase()).getClass().getSimpleName()
+            ));
             return _prototypes.get(className.toLowerCase()).clone();
         }
         else
@@ -33,7 +40,12 @@ public abstract class Visitor {
      */
     protected static void addPrototype(Visitor visitor)
     {
-        System.out.println("已经在Prototype-Visitor中自动添加"+visitor.getClass().getSimpleName());
+        Print.print(new PrintInfo(
+                "Visitor",
+                "0",
+                "addPrototype",
+                "已经在Prototype-Visitor中自动添加"+visitor.getClass().getSimpleName()
+        ));
         _prototypes.put(visitor.getClass().getSimpleName().toLowerCase(),visitor);
     }
 

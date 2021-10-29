@@ -1,6 +1,8 @@
 package musementpark.online.Adapter;
 
 import musementpark.online.Prototype.Visitor;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -18,7 +20,12 @@ public class AmusementQueue {
      */
     public boolean isEmpty()
     {
-        System.out.println("队列"+(_queue.isEmpty()?"是":"不是"+"空的"));
+        Print.print(new PrintInfo(
+                "AmusementQueue",
+                String.valueOf(System.identityHashCode(this)),
+                "isEmpty",
+                "队列"+(_queue.isEmpty()?"是":"不是"+"空的")
+        ));
         return _queue.isEmpty();
     }
 
@@ -29,7 +36,12 @@ public class AmusementQueue {
     public void add(Visitor visitor)
     {
         _queue.offer(visitor);
-        System.out.println("增加游客"+visitor.getClass().getSimpleName());
+        Print.print(new PrintInfo(
+                "AmusementQueue",
+                String.valueOf(System.identityHashCode(this)),
+                "add",
+                "增加游客"+visitor.getClass().getSimpleName()
+        ));
     }
 
     /**
@@ -42,7 +54,12 @@ public class AmusementQueue {
         Queue<Visitor> ret=new LinkedList<>();
         for(int i=0;i<n &&_queue.isEmpty()==false;i++)
             ret.offer(_queue.poll());
-        System.out.println("获取前"+n+"个游客");
+        Print.print(new PrintInfo(
+                "AmusementQueue",
+                String.valueOf(System.identityHashCode(this)),
+                "get",
+                "获取前"+n+"个游客"
+        ));
         return ret;
     }
 }

@@ -1,5 +1,8 @@
 package musementpark.online.Prototype;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: DannyXSC
  * description: Child类继承了Visitor类，表示儿童类型的游客，对于游客的生成我们采用了原型模式，将每一种类型的游客都登记在父类中
@@ -29,7 +32,12 @@ public class Child extends Visitor{
      */
     @Override
     public void getStatus() {
-        System.out.println("child的地位是"+_status.getClass().getSimpleName()+",对应折扣是"+_status.getDiscount());
+        Print.print(new PrintInfo(
+                "Child",
+                String.valueOf(System.identityHashCode(this)),
+                "getStatus",
+                "child的地位是"+_status.getClass().getSimpleName()+",对应折扣是"+_status.getDiscount()
+        ));
     }
 
     /**

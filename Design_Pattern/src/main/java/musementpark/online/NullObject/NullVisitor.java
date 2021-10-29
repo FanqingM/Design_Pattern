@@ -1,6 +1,8 @@
 package musementpark.online.NullObject;
 
 import musementpark.online.Prototype.Visitor;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 /**
  * author:DannyXSC
@@ -22,12 +24,22 @@ public class NullVisitor extends Visitor {
 
     @Override
     public void getStatus() {
-        System.out.println("NullVisitor可以调用getStatus但是没有任何作用");
+        Print.print(new PrintInfo(
+                "NullVisitor",
+                String.valueOf(System.identityHashCode(this)),
+                "getStatus",
+                "NullVisitor可以调用getStatus但是没有任何作用"
+        ));
     }
 
     @Override
     public boolean isNull() {
-        System.out.println("NullVisitor是null");
+        Print.print(new PrintInfo(
+                "NullVisitor",
+                String.valueOf(System.identityHashCode(this)),
+                "isNull",
+                "NullVisitor是null"
+        ));
         return true;
     }
 }

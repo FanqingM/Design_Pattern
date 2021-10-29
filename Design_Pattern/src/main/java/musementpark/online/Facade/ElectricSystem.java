@@ -1,5 +1,8 @@
 package musementpark.online.Facade;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: PandaLYZ
  * description:该类为ElectricSystem类，其作用是对游乐设施进行电路设施检测，采用单例模式实现
@@ -24,6 +27,11 @@ public class ElectricSystem {
      * description: 执行电路流通测试，并输出相关语句
      */
     public void doElectricTesting(){
-        System.out.println("进行设备电路流通测试！");
+        Print.print(new PrintInfo(
+                "ElectricSystem",
+                String.valueOf(System.identityHashCode(this)),
+                "doElectricTesting",
+                "进行设备电路流通测试！"
+        ));
     }
 }

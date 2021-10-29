@@ -13,10 +13,11 @@ public class WhirligigSouvenirMedal extends SouvenirMedal{
      */
     public WhirligigSouvenirMedal() {
         super("旋转木马纪念章");
-        System.out.println("创建了"+name);
         Print.print(new PrintInfo(
                 "WhirligigSouvenirMedal",
-                
+                String.valueOf(System.identityHashCode(this)),
+                "WhirligigSouvenirMedal",
+                "创建了"+name
         ));
     }
 }

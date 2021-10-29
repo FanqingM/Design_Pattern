@@ -1,5 +1,8 @@
 package musementpark.online.Facade;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: PandaLYZ
  * description:该类为OperationAndMaintain_UI类，其向客户端提供了对游乐设施进行日常运维检修的一个接口，采用单例模式实现。同时，该类按顺序封装了进行运维检测的
@@ -30,12 +33,22 @@ public class OperationAndMaintain_UI {
      * description:该方法是提供给客户端的接口，客户端只需要调用该方法即可完成运维检测所需的一系列操作
      */
     public void doMaintenance(){
-        System.out.println("开始对设备进行运维检测！");
+        Print.print(new PrintInfo(
+                "OperationAndMaintain_UI",
+                String.valueOf(System.identityHashCode(this)),
+                "doMaintenance",
+                "开始对设备进行运维检测！"
+        ));
         _electricSys.doElectricTesting();//进行电路连通性检测
         _mechanicalSys.doMechanicalTesting();//进行整体机械结构测试
         _structureSys.doStructureTesting();//进行机器结构稳定性测试
         _agingTestSys.doAgingTest();//进行设备老龄化测试
-        System.out.println("设备运维检测完成！");
+        Print.print(new PrintInfo(
+                "OperationAndMaintain_UI",
+                String.valueOf(System.identityHashCode(this)),
+                "doMaintenance",
+                "设备运维检测完成！"
+        ));
     }
 
 }

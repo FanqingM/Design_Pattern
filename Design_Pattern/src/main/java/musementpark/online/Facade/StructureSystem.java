@@ -1,5 +1,8 @@
 package musementpark.online.Facade;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: PandaLYZ
  * description:该类为StructureSystem类，其作用是对游乐设施进行设备结构化检测，采用单例模式实现
@@ -24,6 +27,11 @@ public class StructureSystem {
      * description: 执行老化监测，并输出相关语句
      */
     public void doStructureTesting(){
-        System.out.println("进行设备结构化测试");
+        Print.print(new PrintInfo(
+                "StructureSystem",
+                String.valueOf(System.identityHashCode(this)),
+                "doStructureTesting",
+                "进行设备结构化测试"
+        ));
     }
 }
