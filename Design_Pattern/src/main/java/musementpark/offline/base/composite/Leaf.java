@@ -21,9 +21,12 @@ public class Leaf extends Component {
     public void accept(Visitor visitor) {
         visitor.visitLeaf(this);
     }
-
+    @Override
     public String getName() {
-        return name;
+        return this.name;
     }
+//    public String getName() {
+//        return name;
+//    }
 
 }

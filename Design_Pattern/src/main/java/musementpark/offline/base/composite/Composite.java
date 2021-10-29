@@ -34,7 +34,10 @@ public class Composite extends Component {
             c.accept(visitor);
         }
     }
-
+    @Override
+    public String getName() {
+        return this.name;
+    }
     @Override
     public void addChild(Component child) {
         childComponents.add(child);
@@ -50,8 +53,8 @@ public class Composite extends Component {
         return childComponents.get(index);
     }
 
-    public String getName() {
-        return name;
-    }
+//    public String getName() {
+//        return name;
+//    }
 
 }

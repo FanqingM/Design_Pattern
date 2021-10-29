@@ -39,4 +39,12 @@ public class Component {
     public Component getChildren(int index) {
         throw new UnsupportedOperationException("对象不支持这个功能");
     }
+
+    /**
+     * 移除子节点
+     * @param child
+     */
+//    public void removeChild(musementpark.offline.base.composite.Component child){
+//        throw new UnsupportedOperationException("对象不支持这个功能！");
+//    }
 }

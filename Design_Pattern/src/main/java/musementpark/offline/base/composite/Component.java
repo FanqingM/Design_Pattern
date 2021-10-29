@@ -16,7 +16,10 @@ public abstract class Component {
     public void accept(Visitor visitor) {
         throw new UnsupportedOperationException("对象不支持这个功能！");
     }
-
+    public String getName() {
+        return this.name;
+//        System.out.println(this.name);
+    }
 
     /**
      * 添加子节点

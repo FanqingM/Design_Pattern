@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="musementpark.offline.entertainment.decorator.DecoratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-29T04:58:28" hostname="fanqing-mdeMacBook-Pro.local" time="0.023">
+<testsuite name="musementpark.offline.entertainment.decorator.DecoratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-29T05:33:22" hostname="fanqing-mdeMacBook-Pro.local" time="0.023">
   <properties/>
   <testcase name="DecoratorTest3()" classname="musementpark.offline.entertainment.decorator.DecoratorTest" time="0.023"/>
   <system-out><![CDATA[
 Print:
 	className = FenceDecorator;
-	objectId = 1316512866;
+	objectId = 1993955286;
 	methodName = FenceDecorator;
 	description = 摩天轮 加一边围栏;
 
 
 Print:
 	className = FenceDecorator;
-	objectId = 1702932354;
+	objectId = 620823328;
 	methodName = FenceDecorator;
 	description = 摩天轮 加一边围栏 加一边围栏;
 
 
 Print:
 	className = TimeDecorator;
-	objectId = 1733982539;
+	objectId = 1868639924;
 	methodName = TimeDecorator;
 	description = 摩天轮 加一边围栏 加一边围栏 加计时功能;
 

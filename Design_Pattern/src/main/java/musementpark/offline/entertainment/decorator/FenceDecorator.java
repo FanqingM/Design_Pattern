@@ -1,6 +1,6 @@
 package musementpark.offline.entertainment.decorator;
 
-import musementpark.offline.entertainment.composite.Component;
+import musementpark.offline.base.composite.Component;
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;
 
