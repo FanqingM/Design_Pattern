@@ -1,11 +1,11 @@
 package musementpark.offline.entertainment.visitor;
 import musementpark.offline.entertainment.composite.Composite;
 import musementpark.offline.entertainment.composite.Leaf;
-
 /**
- * 访问者接口
- * @date 2016年2月29日
+ * author：FanqingM
+ * description：访问者接口
  */
+
 public interface Visitor {
 
     /**

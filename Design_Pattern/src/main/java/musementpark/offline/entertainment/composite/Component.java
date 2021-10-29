@@ -1,10 +1,9 @@
 package musementpark.offline.entertainment.composite;
 
 import musementpark.offline.entertainment.visitor.Visitor;
-
 /**
- * 抽象的组件对象（相当于访问者模式中的Element）
- * @date 2016年2月29日
+ * author：FanqingM
+ * description：抽象的组件对象，是用户访问的对象
  */
 public abstract class Component {
 
@@ -14,8 +13,14 @@ public abstract class Component {
      * @param visitor
      */
     public void accept(Visitor visitor) {
+
         throw new UnsupportedOperationException("对象不支持这个功能！");
     }
+
+    /**
+     * 得到组件名字
+     * @return
+     */
     public String getName() {
         return this.name;
 //        System.out.println(this.name);

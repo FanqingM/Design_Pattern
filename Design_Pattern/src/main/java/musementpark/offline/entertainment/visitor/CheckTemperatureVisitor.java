@@ -5,21 +5,22 @@ import musementpark.offline.entertainment.composite.Composite;
 import musementpark.offline.entertainment.composite.Leaf;
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;
-
+/**
+ * author：FanqingM
+ * description：访问者模式，进行温度检查，与组合模式结合，访问整个组合模式树，两者是组合关系
+ */
 public class CheckTemperatureVisitor implements Visitor {
-
+    /**
+     * 访问中间节点，由于对于娱乐设施的组合模式树，这个没有意义，故不实现
+     * @param composite
+     */
     @Override
     public void visitComposite(Composite composite) {
-//        Print.print(
-//                new PrintInfo(
-//                        "CheckTemperatureVisitor",
-//                        String.valueOf(System.identityHashCode(this)),
-//                        "visitComposite",
-//                        "检查" + composite.getName()+ "温度"
-//                )
-//        );
     }
-
+    /**
+     * 访问叶子节点，检查温度
+     * @param leaf
+     */
     @Override
     public void visitLeaf(Leaf leaf) {
         Print.print(

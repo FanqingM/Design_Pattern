@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * author：FanqingM
- * description：。。。。。。
+ * description：组合模式的非叶子节点类
  */
 public class Composite extends Component {
 
@@ -18,6 +18,10 @@ public class Composite extends Component {
     // 子节点的集合
     private List<Component> childComponents = new ArrayList<Component>();
 
+    /**
+     * 构造函数
+     * @param name
+     */
     public Composite(String name) {
         super();
         super.name = name;
@@ -36,10 +40,20 @@ public class Composite extends Component {
             c.accept(visitor);
         }
     }
+
+    /**
+     * 得到名字
+     * @return
+     */
     @Override
     public String getName() {
         return this.name;
     }
+
+    /**
+     * 添加孩子节点
+     * @param child
+     */
     @Override
     public void addChild(Component child) {
         childComponents.add(child);
@@ -53,6 +67,10 @@ public class Composite extends Component {
         );
     }
 
+    /**
+     * 移除孩子节点
+     * @param child
+     */
     @Override
     public void removeChild(Component child) {
         Print.print(
@@ -66,6 +84,11 @@ public class Composite extends Component {
         childComponents.remove(child);
     }
 
+    /**
+     * 得到指定汉字节点
+     * @param index
+     * @return Component
+     */
     @Override
     public Component getChildren(int index) {
         return childComponents.get(index);
