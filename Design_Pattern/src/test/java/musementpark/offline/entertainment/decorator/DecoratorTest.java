@@ -28,7 +28,6 @@ class DecoratorTest {
         EntertainmentDecorator facility1 = new FenceDecorator(lf1);
         EntertainmentDecorator facility2 = new FenceDecorator(facility1);
         EntertainmentDecorator facility3 = new TimeDecorator(facility2);
-//        System.out.println(facility3.getName());
     }
 
 }
