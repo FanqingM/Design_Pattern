@@ -1,9 +1,7 @@
 package musementpark.offline.entertainment.decorator;
 
 import musementpark.offline.entertainment.composite.Component;
-import musementpark.offline.entertainment.composite.Composite;
-import musementpark.offline.entertainment.composite.Leaf;
-import musementpark.offline.base.visitor.Visitor;
+import musementpark.offline.entertainment.visitor.Visitor;
 
 public abstract class EntertainmentDecorator extends Component {
     private Component component;

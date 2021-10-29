@@ -1,6 +1,6 @@
 package musementpark.offline.entertainment.composite;
 
-import musementpark.offline.base.visitor.Visitor;
+import musementpark.offline.entertainment.visitor.Visitor;
 
 /**
  * 叶子节点（相当于ConcreteElement）

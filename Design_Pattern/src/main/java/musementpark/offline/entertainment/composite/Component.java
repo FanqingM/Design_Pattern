@@ -1,6 +1,6 @@
 package musementpark.offline.entertainment.composite;
 
-import musementpark.offline.base.visitor.Visitor;
+import musementpark.offline.entertainment.visitor.Visitor;
 
 /**
  * 抽象的组件对象（相当于访问者模式中的Element）
