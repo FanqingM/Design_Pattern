@@ -2,7 +2,7 @@ package musementpark.online.AbstractFactory;
 
 /**
  * author: DannyXSC
- * description: RollerCoasterFactory类继承了Gift类，代表RollerCoasterGift类型的Gift
+ * description: RollerCoasterGift类继承了Gift类，代表RollerCoasterGift类型的Gift
  */
 public class RollerCoasterGift extends Gift{
     /**

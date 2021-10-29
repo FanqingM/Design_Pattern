@@ -1,4 +1,4 @@
-package musementpark.online.Facade1;
+package musementpark.online.Facade;
 
 import musementpark.online.Adapter.AmusementQueue;
 import musementpark.online.Prototype.Visitor;

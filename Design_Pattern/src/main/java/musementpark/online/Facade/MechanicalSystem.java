@@ -1,4 +1,4 @@
-package musementpark.online.Facade1;
+package musementpark.online.Facade;
 
 public class MechanicalSystem {
     private static MechanicalSystem _singleton=new MechanicalSystem();

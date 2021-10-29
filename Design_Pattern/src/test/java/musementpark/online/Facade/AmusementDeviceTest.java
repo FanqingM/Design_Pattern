@@ -1,9 +1,7 @@
-package musementpark.online.Facade1;
+package musementpark.online.Facade;
 
 import musementpark.online.Prototype.VisitorFactory;
 import musementpark.util.Load;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class AmusementDeviceTest {
     public static void main(String[] args) {

@@ -1,28 +1,43 @@
 package musementpark.online.Builder;
 
-import musementpark.util.Print;
-import musementpark.util.PrintInfo;
-
+/**
+ * author: PandaLYZ
+ * description:该类为Ticket类型的抽象类，其派生出了AdultTicket、ChildTicket、ElderTicket三个子类
+ */
 public abstract class Ticket {
     private int _fullPrice;
+    /**
+     * description:构造函数，初始化了_fullPrice变量
+     */
     public Ticket(int price){
         this._fullPrice=price;
     }
 
+    /**
+     * description:该方法返回总价
+     * @return 返回_fullPrice变量的值
+     */
     protected int getFullPrice(){
         return _fullPrice;
     }
+
+    /**
+     * description: 抽象方法，供子类实现
+     * @return double 供子类实现
+     */
     public abstract double calPrice();
 
+    /**
+     * description: 抽象方法，供子类实现
+     * @return 返回一个字符串
+     */
     public abstract String getInfo();
+
+    /**
+     * description: 该方法用来打印总价
+     */
     public void showInfo()
     {
-//        Print.print(new PrintInfo(
-//                "TicketFactory.Builder",
-//                "2(随后修改)",
-//                "set_childDiscount  set_elderDiscount  build",
-//                "在本例中，使用了静态内部类来实现建造者模式，分别通过set_elderDiscount函数与set_childDiscount两个函数对老年人与儿童的折扣进行初始化，然后通过build函数将其赋给Ticket的工厂。"
-//        ));
         System.out.println(getInfo()+",总价是"+calPrice());
     }
 }

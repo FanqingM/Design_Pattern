@@ -1,4 +1,4 @@
-package musementpark.online.Facade1;
+package musementpark.online.Facade;
 
 public class AgingTestSystem {
     private static AgingTestSystem _singleton=new AgingTestSystem();
