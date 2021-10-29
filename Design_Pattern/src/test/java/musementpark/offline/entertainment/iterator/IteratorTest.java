@@ -33,6 +33,8 @@ class IteratorTest {
         c1.addChild(leaf2);
         c2.addChild(leaf3);
         c2.addChild(leaf4);
+        //以上构造需要迭代器便利的数据结构
+        //下面用迭代器进行遍历
         for(Iterator iter = entertainmentList.getIterator(); iter.hasNext();){
             Component c = (Component) iter.next();
             System.out.println(c.getName());
