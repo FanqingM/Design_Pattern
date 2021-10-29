@@ -6,26 +6,45 @@ import musementpark.util.Print;
 import musementpark.util.PrintInfo;
 
 /**
- * 叶子节点（相当于ConcreteElement）
- * @date 2016年2月29日
+ * author：FanqingM
+ * description：抽象的叶子节点，将组合模式与责任链模式自然结合
  */
 public class Leaf extends Component {
 
     private Component parent;
     private String name;
 
+    /**
+     * 构造函数
+     * @param name
+     */
     public Leaf(String name) {
         super();
         this.name = name;
     }
+
+    /**
+     * 处理不了问题，找父亲节点
+     * @return
+     */
     @Override
     public Component getParent() {
         return this.parent;
     }
+
+    /**
+     * 设置父亲节点
+     * @param component
+     */
     @Override
     public void setParent(Component component) {
         this.parent = component;
     }
+
+    /**
+     * 解决用户请求
+     * @param bug
+     */
     private void solve(Bug bug) {
         Print.print(
                 new PrintInfo(
@@ -36,6 +55,11 @@ public class Leaf extends Component {
                 )
         );
     }
+
+    /**
+     * 处理用户请求
+     * @param bug
+     */
     @Override
     public void handle(Bug bug) {
         if (bug.value <= 20) {
@@ -63,7 +87,6 @@ public class Leaf extends Component {
             );
         }
     }
-
     public String getName() {
         return name;
     }

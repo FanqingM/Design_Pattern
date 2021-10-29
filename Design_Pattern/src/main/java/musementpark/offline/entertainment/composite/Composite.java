@@ -94,8 +94,4 @@ public class Composite extends Component {
         return childComponents.get(index);
     }
 
-//    public String getName() {
-//        return name;
-//    }
-
 }
