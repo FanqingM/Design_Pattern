@@ -1,9 +1,8 @@
 package musementpark.online.State;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 14:09
- * @description:
+ * author: Yxxxb
+ * description: 状态模式测试类
  */
 public class StateTest {
     public static void main(String[] args) {

@@ -3,9 +3,8 @@ package musementpark.online.Observer;
 import java.util.Hashtable;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 14:08
- * @description:
+ * author: Yxxxb
+ * description: 观察者模式测试类
  */
 public class ObserverTest {
     public static void main(String[] args) {

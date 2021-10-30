@@ -4,9 +4,8 @@ import java.io.IOException;
 import java.util.Hashtable;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 14:08
- * @description:
+ * author: Yxxxb
+ * description: 单例享元模式测试类
  */
 public class Singleton_FlyweightTest {
     public static void main(String[] args) throws IOException {

@@ -3,13 +3,16 @@ package musementpark.online.Singleton_Flyweight;
 import java.io.IOException;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 13:48
- * @description:
+ * author: Yxxxb
+ * description: 单例享元调用类 调用工厂类内的相关函数
  */
 public class SingleTypeTourist {
     private final OnlineEntertainment[] Entertainments;
 
+    /*
+     * 构造函数
+     * @param String[] OnlineEntertainmentList, String TouristType, Entertainment[] EntertainmentList
+     * */
     public SingleTypeTourist(String[] OnlineEntertainmentList, String TouristType, Entertainment[] EntertainmentList) throws IOException {
         Entertainments = new OnlineEntertainment[OnlineEntertainmentList.length];
         ManageFactory factory = ManageFactory.getInstance();
@@ -19,6 +22,10 @@ public class SingleTypeTourist {
         }
     }
 
+    /*
+     * show函数 输出用
+     * @param 无
+     * */
     public void show() {
         for (OnlineEntertainment entertainment : Entertainments) {
             entertainment.show();

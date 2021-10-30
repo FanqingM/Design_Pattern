@@ -3,23 +3,34 @@ package musementpark.online.Observer;
 import java.util.Hashtable;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 13:54
- * @description:
+ * author: Yxxxb
+ * description: Administrator为游乐场管理员类 具有修改和设置游乐设施权限以及等候时间的功能。
  */
 public class Administrator {
     private String _AdministratorInfo;
     //strategy
     private Entertainment _WorkingEntertainment;
 
+    /*
+     * 管理员构造函数
+     * @param 娱乐设施实体对象
+     * */
     public Administrator(Entertainment entertainment) {
         _WorkingEntertainment = entertainment;
     }
 
+    /*
+     * 修改策略模式指向对象
+     * @param 娱乐设施实体对象
+     * */
     public void set_WorkingEntertainment(Entertainment entertainment) {
         _WorkingEntertainment = entertainment;
     }
 
+    /*
+     * 修改权限哈希表
+     * @param 权限哈希表
+     * */
     public void set_EntertainmentAuthority(Hashtable<String, Boolean> authority) {
         System.out.println("\n管理员正在修改 " + _WorkingEntertainment.get_EntertainmentName() + " 的游客游玩权限");
         System.out.println("观察者为娱乐设施" + _WorkingEntertainment.get_EntertainmentName() + "的游客管理对象");
@@ -28,6 +39,10 @@ public class Administrator {
         _WorkingEntertainment.set_Authority(authority);
     }
 
+    /*
+     * 修改等候时间哈希表
+     * @param 等候时间哈希表
+     * */
     public void set_EntertainmentWaitingTime(Hashtable<String, Integer> waitingTime) {
         _WorkingEntertainment.set_WaitingTime(waitingTime);
     }

@@ -4,9 +4,8 @@ import java.io.IOException;
 import java.util.Hashtable;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 14:09
- * @description:
+ * author: Yxxxb
+ * description: 组合享元模式测试类
  */
 public class Composite_FlyweightTest {
     public static void main(String[] args) throws IOException {

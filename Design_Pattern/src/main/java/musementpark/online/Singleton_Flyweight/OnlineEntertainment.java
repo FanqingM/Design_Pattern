@@ -1,9 +1,8 @@
 package musementpark.online.Singleton_Flyweight;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 13:48
- * @description:
+ * author: Yxxxb
+ * description: 线上游乐设施类 也是享元类
  */
 public class OnlineEntertainment {
     // 内部状态：游客类型 游乐设施名称
@@ -15,37 +14,62 @@ public class OnlineEntertainment {
     private int _WaitingTime;
     private int _ElseInfo;
 
-    // strategy 指向Entertainment
+    /*
+     * 构造函数
+     * @param String name, String TouristType, Entertainment _Entertainment
+     * */
     public OnlineEntertainment(String name, String TouristType, Entertainment _Entertainment) {
         _WaitingTime = -1;
         _TouristType = TouristType;
         _EntertainmentName = name;
         _Authority = _Entertainment.get_Authority().get(_TouristType); // 错误处理 待添加
         _Entertainment.addEntertainments(this);
-//        System.out.println(name + " Entertainment has been constructed!");
     }
 
+    /*
+     * 获取权限
+     * @param 无
+     * */
     public Boolean get_Authority() {
         return _Authority;
     }
 
-    // 对Authority和TouristType的操作 状态模式
+    /*
+     * 设置权限
+     * @param 无
+     * */
     public void set_Authority(Boolean authority) {
         _Authority = authority;
     }
 
+    /*
+     * 获取游客类型
+     * @param 无
+     * */
     public String get_TouristType() {
         return _TouristType;
     }
 
+    /*
+     * 获取等候时间
+     * @param 无
+     * */
     public int get_WaitingTime() {
         return _WaitingTime;
     }
 
+    /*
+     * 设置等候时间
+     * @param 无
+     * */
     public void set_WaitingTime(int WaitingTime) {
         _WaitingTime = WaitingTime;
     }
 
+    /*
+     * show函数 输出用
+     * @param 无
+     * */
     public void show() {
         String TouristAuthority = get_Authority() ? "有游玩权限" : "无游玩权限";
         int waitingtime = Math.max(_WaitingTime, 0);

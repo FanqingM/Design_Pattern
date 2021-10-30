@@ -4,9 +4,8 @@ import java.io.IOException;
 import java.util.Hashtable;
 
 /**
- * @author: Yxxxb
- * @date: 2021/10/28 13:52
- * @description:
+ * author: Yxxxb
+ * description: 享元工厂类 建立享元对象 实现组合享元与单例享元的链接
  */
 public class ManageFactory {
     //TouristType HashTable
@@ -14,10 +13,18 @@ public class ManageFactory {
 
     private static final ManageFactory singleton = new ManageFactory();
 
+    /*
+     * 单例享元工厂返回函数
+     * @param 无
+     * */
     public static ManageFactory getInstance() {
         return singleton;
     }
 
+    /*
+     * 享元对象构建函数
+     * @param String EntertainmentName, String TouristType, Entertainment entertainment
+     * */
     public synchronized OnlineEntertainment getEntertainmentTourist(String EntertainmentName, String TouristType, Entertainment entertainment) throws IOException {
         Hashtable<String, OnlineEntertainment> singleTypeTourist = FactoryTypeTable.get(TouristType);
         if (singleTypeTourist == null) {
@@ -38,6 +45,10 @@ public class ManageFactory {
         return EM;
     }
 
+    /*
+     * 组合享元对象构建函数
+     * @param String[] EntertainmentName, String TouristType, Entertainment[] entertainment
+     * */
     public synchronized void getEntertainmentTourist(String[] EntertainmentName, String TouristType, Entertainment[] entertainment) throws IOException {
         SingleTypeTourist singleTypeTourist = new SingleTypeTourist(EntertainmentName, TouristType, entertainment);
 //        System.out.println(TouristType);
