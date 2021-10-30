@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.management.chain.ChainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-29T07:07:26" hostname="fanqing-mdeMacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="test()" classname="musementpark.offline.management.chain.ChainTest" time="0.008"/>
+  <system-out><![CDATA[
+Print:
+	className = Component（Leaf）;
+	objectId = 1906970479;
+	methodName = handle;
+	description = 清洁工管理部门无法解决了一个难度为 50 的 bug，传给上级;
+
+
+Print:
+	className = Component（Composite）;
+	objectId = 46564790;
+	methodName = handle;
+	description = 管理部门无法解决了一个难度为 50 的 bug，传给上级;
+
+
+Print:
+	className = Component（Composite）;
+	objectId = 683831263;
+	methodName = solve;
+	description = 总管理部门解决了一个难度为 50 的 bug;
+
+
+Print:
+	className = Component（Leaf）;
+	objectId = 1906970479;
+	methodName = handle;
+	description = 清洁工管理部门无法解决了一个难度为 200 的 bug，传给上级;
+
+
+Print:
+	className = Component（Composite）;
+	objectId = 46564790;
+	methodName = handle;
+	description = 管理部门无法解决了一个难度为 200 的 bug，传给上级;
+
+
+Print:
+	className = Component（Composite）;
+	objectId = 683831263;
+	methodName = handle;
+	description = 总管理部门无法解决了一个难度为 200，该bug无法解决;
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

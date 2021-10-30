@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.base.blackboard.BlackboardTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-29T07:07:26" hostname="fanqing-mdeMacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="blackboardtest()" classname="musementpark.offline.base.blackboard.BlackboardTest" time="0.003"/>
+  <system-out><![CDATA[This is a message from Printer resource
+The printer message
+This is a message from Correct resource
+The correct message
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
