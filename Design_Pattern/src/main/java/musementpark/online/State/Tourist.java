@@ -2,6 +2,8 @@ package musementpark.online.State;
 
 import musementpark.online.Bridge.Status;
 import musementpark.online.Prototype.Visitor;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 /**
  * author: Yxxxb
@@ -19,6 +21,7 @@ public class Tourist extends Visitor {
     public Tourist(String name, SingleEntertainment singleEntertainment) {
         _singleEntertainment = singleEntertainment;
         _status = getStatus(name);
+        _status.getAuthority();
     }
 
     /**
@@ -28,7 +31,15 @@ public class Tourist extends Visitor {
      * @param targetType
      */
     public void ChangeTouristType(String currentType, String targetType) {
-        System.out.println("该游客类型已由" + currentType + "改变成" + targetType);
+        String outputInfo = "该游客类型已由" + currentType + "改变成" + targetType;
+        Print.print(
+                new PrintInfo(
+                        "Tourist",
+                        String.valueOf(System.identityHashCode(this)),
+                        "ChangeTouristType",
+                        outputInfo
+                )
+        );
         _status = getStatus(targetType);
         _status.getAuthority();
     }
