@@ -1,6 +1,8 @@
 package musementpark.online.Singleton_Flyweight;
 
 import musementpark.online.decorator.EntertainmentDecorator;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 /**
  * author: Yxxxb
@@ -75,6 +77,14 @@ public class OnlineEntertainment {
     public void show() {
         String TouristAuthority = get_Authority() ? "有游玩权限" : "无游玩权限";
         int waitingtime = Math.max(_WaitingTime, 0);
-        System.out.println(_EntertainmentName + " 等候时间： " + waitingtime + " 游客游玩权限： " + TouristAuthority + " 游客类型： " + _TouristType);
+        String outputInfo = _EntertainmentName + " 等候时间： " + waitingtime + " 游客游玩权限： " + TouristAuthority + " 游客类型： " + _TouristType;
+        Print.print(
+                new PrintInfo(
+                        "OnlineEntertainment",
+                        String.valueOf(System.identityHashCode(this)),
+                        "show",
+                        outputInfo
+                )
+        );
     }
 }

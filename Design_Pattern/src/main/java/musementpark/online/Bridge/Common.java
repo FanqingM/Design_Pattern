@@ -14,4 +14,7 @@ public class Common extends Status {
     public double getDiscount() {
         return 1;
     }
+
+    @Override
+    public Boolean getAuthority() { return false; }
 }

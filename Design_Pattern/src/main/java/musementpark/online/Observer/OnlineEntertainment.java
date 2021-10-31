@@ -1,5 +1,8 @@
 package musementpark.online.Observer;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: Yxxxb
  * description: 线上游乐设施类 也是享元类
@@ -24,7 +27,15 @@ public class OnlineEntertainment {
         _EntertainmentName = name;
         _Authority = _Entertainment.get_Authority().get(_TouristType); // 错误处理 待添加
         _Entertainment.addEntertainments(this);
-        System.out.println(name + " " + TouristType + " 游乐设施线上管理类已被创建");
+        String outputInfo = name + " " + TouristType + " 游乐设施线上管理类已被创建";
+        Print.print(
+                new PrintInfo(
+                        "OnlineEntertainment",
+                        String.valueOf(System.identityHashCode(this)),
+                        "OnlineEntertainment",
+                        outputInfo
+                )
+        );
     }
 
     /*
@@ -74,6 +85,14 @@ public class OnlineEntertainment {
     public void show() {
         String TouristAuthority = get_Authority() ? "Has Authority!" : "No Authority";
         int waitingtime = Math.max(_WaitingTime, 0);
-        System.out.println(_EntertainmentName + " WaitingTime: " + waitingtime + " TouristAuthority：" + TouristAuthority + " TouristType: " + _TouristType);
+        String outputInfo = _EntertainmentName + " WaitingTime: " + waitingtime + " TouristAuthority：" + TouristAuthority + " TouristType: " + _TouristType;
+        Print.print(
+                new PrintInfo(
+                        "OnlineEntertainment",
+                        String.valueOf(System.identityHashCode(this)),
+                        "show",
+                        outputInfo
+                )
+        );
     }
 }

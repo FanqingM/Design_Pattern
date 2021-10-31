@@ -1,34 +1,92 @@
 package musementpark.online.State;
 
+import musementpark.online.Bridge.Status;
+import musementpark.online.Prototype.Visitor;
+
 /**
  * author: Yxxxb
  * description: 游客类 内部设置状态及其相关函数
  */
-public class Tourist {
-    private State _state;
-    private String _TouristType;
+public class Tourist extends Visitor {
+    private final SingleEntertainment _singleEntertainment;
 
-    /*
-     * 构造函数
-     * @param 无
-     * */
-    public Tourist(){
-        _state = null;
+    /**
+     * 构造函数 传入单一娱乐设施对象
+     *
+     * @param name
+     * @param singleEntertainment
+     */
+    public Tourist(String name, SingleEntertainment singleEntertainment) {
+        _singleEntertainment = singleEntertainment;
+        _status = getStatus(name);
     }
 
-    /*
-     * 设置状态函数
-     * @param State
-     * */
-    public void set_state(State _state){
-        this._state = _state;
+    /**
+     * 改变游客票务类型
+     *
+     * @param currentType
+     * @param targetType
+     */
+    public void ChangeTouristType(String currentType, String targetType) {
+        System.out.println("该游客类型已由" + currentType + "改变成" + targetType);
+        _status = getStatus(targetType);
+        _status.getAuthority();
     }
 
-    /*
-     * 获取状态
-     * @param State
-     * */
-    public State get_state(){
-        return _state;
+    /**
+     * 重写虚函数 无意义
+     *
+     * @return
+     */
+    public Visitor clone() {
+        return this;
     }
+
+    ;
+
+    /**
+     * 返回游客票价状态
+     *
+     * @return
+     */
+    public Status getStatus() {
+        return _status;
+    }
+
+    ;
+
+    /**
+     * 含参 返回创建的状态实例
+     *
+     * @param name
+     * @return
+     */
+    public Status getStatus(String name) {
+        switch (name) {
+            case "vip":
+                return new Vip("vip", _singleEntertainment);
+            case "normal":
+                return new Normal("normal", _singleEntertainment);
+            case "daytime":
+                return new DayTime("daytime", _singleEntertainment);
+            case "nighttime":
+                return new NightTime("nighttime", _singleEntertainment);
+            default:
+                return this._status;
+        }
+    }
+
+    ;
+
+
+    /**
+     * description: 判断是否为空类型的游客，供子类重写
+     *
+     * @return boolean
+     */
+    public boolean isNull() {
+        return false;
+    }
+
+    ;
 }
