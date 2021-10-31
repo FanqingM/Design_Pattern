@@ -11,9 +11,6 @@ import java.util.List;
 public class Entertainment {
     private final String _EntertainmentName;
     private boolean _OperatingState;
-    // private Date _WorkingStartTime;
-    // private Date _WorkingEndTime;
-    // private int _ElseInfo; // other information
     private Hashtable<String, Boolean> _Authority;
     private Hashtable<String, Integer> _WaitingTime;
     // strategy 指向自己的array

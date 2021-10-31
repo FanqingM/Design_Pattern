@@ -1,5 +1,7 @@
 package musementpark.online.Singleton_Flyweight;
 
+import musementpark.online.decorator.EntertainmentDecorator;
+
 import java.io.IOException;
 import java.util.Hashtable;
 
@@ -25,7 +27,7 @@ public class ManageFactory {
      * 享元对象构建函数
      * @param String EntertainmentName, String TouristType, Entertainment entertainment
      * */
-    public synchronized OnlineEntertainment getEntertainmentTourist(String EntertainmentName, String TouristType, Entertainment entertainment) throws IOException {
+    public synchronized OnlineEntertainment getEntertainmentTourist(String EntertainmentName, String TouristType, EntertainmentDecorator entertainmentDecorator) throws IOException {
         Hashtable<String, OnlineEntertainment> singleTypeTourist = FactoryTypeTable.get(TouristType);
         if (singleTypeTourist == null) {
             singleTypeTourist = new Hashtable<String, OnlineEntertainment>();
@@ -34,7 +36,7 @@ public class ManageFactory {
         }
         OnlineEntertainment EM = (OnlineEntertainment) singleTypeTourist.get(EntertainmentName);
         if (EM == null) {
-            EM = new OnlineEntertainment(EntertainmentName, TouristType, entertainment);
+            EM = new OnlineEntertainment(EntertainmentName, TouristType, entertainmentDecorator);
             FactoryTypeTable.get(TouristType).put(EntertainmentName, EM);
             System.out.println(EntertainmentName + " 游乐设施线上类已被创建");
             System.out.println("内部状态： 娱乐设施 - " + EntertainmentName + " 游客类型 - " + TouristType + "\n外部状态： 等候时间 是否玩过 剩余游玩次数等...\n");
@@ -49,8 +51,8 @@ public class ManageFactory {
      * 组合享元对象构建函数
      * @param String[] EntertainmentName, String TouristType, Entertainment[] entertainment
      * */
-    public synchronized void getEntertainmentTourist(String[] EntertainmentName, String TouristType, Entertainment[] entertainment) throws IOException {
-        SingleTypeTourist singleTypeTourist = new SingleTypeTourist(EntertainmentName, TouristType, entertainment);
+    public synchronized void getEntertainmentTourist(String[] EntertainmentName, String TouristType, EntertainmentDecorator[] entertainmentDecorator) throws IOException {
+        SingleTypeTourist singleTypeTourist = new SingleTypeTourist(EntertainmentName, TouristType, entertainmentDecorator);
         System.out.println(TouristType);
         singleTypeTourist.show();
     }

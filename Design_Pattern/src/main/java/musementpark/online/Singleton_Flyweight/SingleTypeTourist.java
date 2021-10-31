@@ -1,5 +1,7 @@
 package musementpark.online.Singleton_Flyweight;
 
+import musementpark.online.decorator.EntertainmentDecorator;
+
 import java.io.IOException;
 
 /**
@@ -13,12 +15,12 @@ public class SingleTypeTourist {
      * 构造函数
      * @param String[] OnlineEntertainmentList, String TouristType, Entertainment[] EntertainmentList
      * */
-    public SingleTypeTourist(String[] OnlineEntertainmentList, String TouristType, Entertainment[] EntertainmentList) throws IOException {
+    public SingleTypeTourist(String[] OnlineEntertainmentList, String TouristType, EntertainmentDecorator[] EntertainmentDecoratorList) throws IOException {
         Entertainments = new OnlineEntertainment[OnlineEntertainmentList.length];
         ManageFactory factory = ManageFactory.getInstance();
         for (int i = 0; i < Entertainments.length; i++) {
             // 这里修改为命令模式  也可以加上visitor
-            Entertainments[i] = factory.getEntertainmentTourist(OnlineEntertainmentList[i], TouristType, EntertainmentList[i]);
+            Entertainments[i] = factory.getEntertainmentTourist(OnlineEntertainmentList[i], TouristType, EntertainmentDecoratorList[i]);
         }
     }
 

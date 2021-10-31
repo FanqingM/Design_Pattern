@@ -1,5 +1,7 @@
 package musementpark.online.Singleton_Flyweight;
 
+import musementpark.online.decorator.EntertainmentDecorator;
+
 /**
  * author: Yxxxb
  * description: 线上游乐设施类 也是享元类
@@ -18,12 +20,12 @@ public class OnlineEntertainment {
      * 构造函数
      * @param String name, String TouristType, Entertainment _Entertainment
      * */
-    public OnlineEntertainment(String name, String TouristType, Entertainment _Entertainment) {
+    public OnlineEntertainment(String name, String TouristType, EntertainmentDecorator _EntertainmentDecorator) {
         _WaitingTime = -1;
         _TouristType = TouristType;
         _EntertainmentName = name;
-        _Authority = _Entertainment.get_Authority().get(_TouristType); // 错误处理 待添加
-        _Entertainment.addEntertainments(this);
+        _Authority = _EntertainmentDecorator.get_Authority().get(_TouristType); // 错误处理 待添加
+        _EntertainmentDecorator.addEntertainments(this);
     }
 
     /*

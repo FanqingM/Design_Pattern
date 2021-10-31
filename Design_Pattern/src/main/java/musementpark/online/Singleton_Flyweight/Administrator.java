@@ -1,5 +1,7 @@
 package musementpark.online.Singleton_Flyweight;
 
+import musementpark.online.decorator.EntertainmentDecorator;
+
 import java.util.Hashtable;
 
 /**
@@ -9,22 +11,22 @@ import java.util.Hashtable;
 public class Administrator {
     private String _AdministratorInfo;
     //strategy
-    private Entertainment _WorkingEntertainment;
+    private EntertainmentDecorator _WorkingEntertainmentDecorator;
 
     /*
      * 管理员构造函数
      * @param 娱乐设施实体对象
      * */
-    public Administrator(Entertainment entertainment) {
-        _WorkingEntertainment = entertainment;
+    public Administrator(EntertainmentDecorator entertainmentDecorator) {
+        _WorkingEntertainmentDecorator = entertainmentDecorator;
     }
 
     /*
      * 修改策略模式指向对象
      * @param 娱乐设施实体对象
      * */
-    public void set_WorkingEntertainment(Entertainment entertainment) {
-        _WorkingEntertainment = entertainment;
+    public void set_WorkingEntertainment(EntertainmentDecorator entertainmentDecorator) {
+        _WorkingEntertainmentDecorator = entertainmentDecorator;
     }
 
     /*
@@ -32,7 +34,7 @@ public class Administrator {
      * @param 权限哈希表
      * */
     public void set_EntertainmentAuthority(Hashtable<String, Boolean> authority) {
-        _WorkingEntertainment.set_Authority(authority);
+        _WorkingEntertainmentDecorator.set_Authority(authority);
     }
 
     /*
@@ -40,6 +42,6 @@ public class Administrator {
      * @param 等候时间哈希表
      * */
     public void set_EntertainmentWaitingTime(Hashtable<String, Integer> waitingTime) {
-        _WorkingEntertainment.set_WaitingTime(waitingTime);
+        _WorkingEntertainmentDecorator.set_WaitingTime(waitingTime);
     }
 }
