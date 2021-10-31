@@ -1,8 +1,6 @@
-package musementpark.offline.base.blackboard;
+package musementpark.online.blackboard;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class BlackboardTest {
     @Test

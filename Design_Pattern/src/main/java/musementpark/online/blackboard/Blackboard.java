@@ -1,4 +1,4 @@
-package musementpark.offline.base.blackboard;
+package musementpark.online.blackboard;
 
 import java.util.ArrayList;
 import java.util.List;

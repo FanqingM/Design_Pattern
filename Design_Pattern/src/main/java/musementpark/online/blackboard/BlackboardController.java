@@ -1,4 +1,4 @@
-package musementpark.offline.base.blackboard;
+package musementpark.online.blackboard;
 
 public class BlackboardController {
 
