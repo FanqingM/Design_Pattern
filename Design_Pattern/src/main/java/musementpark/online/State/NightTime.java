@@ -1,6 +1,8 @@
 package musementpark.online.State;
 
 import musementpark.online.Bridge.Status;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 /**
  * author: Yxxxb
@@ -39,7 +41,15 @@ public class NightTime extends Status {
     @Override
     public Boolean getAuthority() {
         String authority = _SingleEntertainment.get_Authority().get(_StateName) ? "拥有权限" : "没有权限";
-        System.out.println(_StateName + "该玩家" + authority + "游玩此游乐设施");
+        String outputInfo = _StateName + "该玩家" + authority + "游玩此游乐设施";
+        Print.print(
+                new PrintInfo(
+                        "NightTime",
+                        String.valueOf(System.identityHashCode(this)),
+                        "getAuthority",
+                        outputInfo
+                )
+        );
         return _SingleEntertainment.get_Authority().get(_StateName);
     }
 }
