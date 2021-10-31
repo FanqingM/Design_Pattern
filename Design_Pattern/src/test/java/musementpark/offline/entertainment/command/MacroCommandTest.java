@@ -24,7 +24,7 @@ class MacroCommandTest {
         c2.addChild(lf3);
         c2.addChild(lf4);
         Entertainment entertain = new Entertainment(lf1);
-        System.out.println(entertain.component.name);
+
         Macro myMacro = new Macro();
         myMacro.addCommand(new OpenCommand(entertain));
         myMacro.addCommand(new VolumeCommand(entertain));
