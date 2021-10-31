@@ -3,5 +3,8 @@ package musementpark.online.Singleton;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AmusementParkTest {
-        AmusementPark myInstance=AmusementPark.getInstance();
+        public static void main(String[] args) {
+                AmusementPark myInstance=AmusementPark.getInstance();
+        }
+
 }
