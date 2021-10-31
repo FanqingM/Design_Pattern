@@ -2,12 +2,10 @@ package musementpark.online.Builder;
 
 class TicketFactoryTest {
     public static void main(String[] args) {
-        TicketFactory factory = new TicketFactory.Builder(100)
-                .set_childDiscount(0.8)
-                .set_freeDiscount(0).build();
+        TicketFactory factory = new TicketFactory.Builder(100).set_childDiscount(0.8).set_elderDiscount(0.7).build();
         Ticket t1 = factory.getTicket("child");
         Ticket t2 = factory.getTicket("adult");
-        Ticket t3 = factory.getTicket("free");
+        Ticket t3 = factory.getTicket("elder");
 
         t1.showInfo();
         t2.showInfo();
