@@ -1,5 +1,6 @@
 package musementpark.online.NullObject;
 
+import musementpark.online.Bridge.Status;
 import musementpark.online.Prototype.Visitor;
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;
@@ -15,7 +16,8 @@ public class NullVisitor extends Visitor {
         addPrototype(this);
     }
 
-    private NullVisitor(int dump){}
+    private NullVisitor(int dump) {
+    }
 
     @Override
     public NullVisitor clone() {
@@ -23,13 +25,14 @@ public class NullVisitor extends Visitor {
     }
 
     @Override
-    public void getStatus() {
+    public Status getStatus() {
         Print.print(new PrintInfo(
                 "NullVisitor",
                 String.valueOf(System.identityHashCode(this)),
                 "getStatus",
                 "NullVisitor可以调用getStatus但是没有任何作用"
         ));
+        return _status;
     }
 
     @Override

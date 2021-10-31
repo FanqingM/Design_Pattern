@@ -1,6 +1,9 @@
 package musementpark.online.Strategy;
 
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 /**
  * author: Yxxxb
  * description: Administrator为游乐场管理员类 推荐路径
@@ -21,7 +24,15 @@ public class Administrator {
      * @param String touristType
      * */
     public String executeRoute(String touristType){
-        System.out.println(routeStrategy.getRoute(touristType));
+        String outputInfo = "推荐路径为：" + routeStrategy.getRoute(touristType);
+        Print.print(
+                new PrintInfo(
+                        "Administrator",
+                        String.valueOf(System.identityHashCode(this)),
+                        "executeRoute",
+                        outputInfo
+                )
+        );
         return routeStrategy.getRoute(touristType);
     }
 }

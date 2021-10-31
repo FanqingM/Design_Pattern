@@ -8,16 +8,10 @@ public class StateTest {
     public static void main(String[] args) {
         System.out.println("状态模式测试\n");
 
-        Tourist tourist = new Tourist();
+        SingleEntertainment singleEntertainment = new SingleEntertainment("旋转木马");
 
-        WithAuthorityState withAuthorityState = new WithAuthorityState();
-        tourist.set_state(withAuthorityState);
-        tourist.get_state().show(tourist);
+        Tourist visitor = new Tourist("normal", singleEntertainment);
 
-        System.out.println("管理员更改顾客游玩权限");
-
-        WithoutAuthorityState withoutAuthorityState = new WithoutAuthorityState();
-        tourist.set_state(withoutAuthorityState);
-        tourist.get_state().show(tourist);
+        visitor.ChangeTouristType("normal", "vip");
     }
 }

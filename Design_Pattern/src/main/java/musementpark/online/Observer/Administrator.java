@@ -1,5 +1,8 @@
 package musementpark.online.Observer;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 import java.util.Hashtable;
 
 /**
@@ -32,10 +35,17 @@ public class Administrator {
      * @param 权限哈希表
      * */
     public void set_EntertainmentAuthority(Hashtable<String, Boolean> authority) {
-        System.out.println("\n管理员正在修改 " + _WorkingEntertainment.get_EntertainmentName() + " 的游客游玩权限");
-        System.out.println("观察者为娱乐设施" + _WorkingEntertainment.get_EntertainmentName() + "的游客管理对象");
-        System.out.println("被观察者为娱乐设施" + _WorkingEntertainment.get_EntertainmentName());
-        System.out.println();
+        String outputInfo = "\n管理员正在修改 " + _WorkingEntertainment.get_EntertainmentName() + " 的游客游玩权限\n" + "观察者为娱乐设施"
+                + _WorkingEntertainment.get_EntertainmentName() + "的游客管理对象\n" + "被观察者为娱乐设施" + _WorkingEntertainment.get_EntertainmentName() + "\n";
+        Print.print(
+                new PrintInfo(
+                        "Administrator",
+                        String.valueOf(System.identityHashCode(this)),
+                        "set_EntertainmentAuthority",
+                        outputInfo
+                )
+        );
+
         _WorkingEntertainment.set_Authority(authority);
     }
 

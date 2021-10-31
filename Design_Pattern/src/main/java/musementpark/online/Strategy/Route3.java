@@ -11,6 +11,6 @@ public class Route3 implements RouteStrategy{
      * */
     @Override
     public String getRoute (String touristType){
-        return touristType + " Route3";
+        return touristType + " Route3 : 过山车 -> 大摆锤 -> 激流勇进 -> 旋转木马";
     }
 }

@@ -1,5 +1,8 @@
 package musementpark.online.Observer;
 
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
+
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -38,9 +41,25 @@ public class Entertainment {
         for (OnlineEntertainment onlineEntertainment : _OnlineEntertainments) {
             onlineEntertainment.set_Authority(_Authority.get(onlineEntertainment.get_TouristType()));
             String Authority = _Authority.get(onlineEntertainment.get_TouristType()) ? "有游玩权限" : "无游玩权限";
-            System.out.println(_EntertainmentName + " 游乐设施的 " + onlineEntertainment.get_TouristType() + " 类客户游玩权限已被修改为 " + Authority);
+            String outputInfo = _EntertainmentName + " 游乐设施的 " + onlineEntertainment.get_TouristType() + " 类客户游玩权限已被修改为 " + Authority;
+            Print.print(
+                    new PrintInfo(
+                            "Entertainment",
+                            String.valueOf(System.identityHashCode(this)),
+                            "UpdateAllAuthority",
+                            outputInfo
+                    )
+            );
         }
-        System.out.println("\n本游乐设施的所有游客管理对象的游玩权限均被修改完成！");
+        String outputInfo = "\n本游乐设施的所有游客管理对象的游玩权限均被修改完成！";
+        Print.print(
+                new PrintInfo(
+                        "Entertainment",
+                        String.valueOf(System.identityHashCode(this)),
+                        "UpdateAllAuthority",
+                        outputInfo
+                )
+        );
     }
 
     /*
@@ -51,7 +70,15 @@ public class Entertainment {
         for (OnlineEntertainment onlineEntertainment : _OnlineEntertainments) {
             onlineEntertainment.set_WaitingTime(_WaitingTime.get(onlineEntertainment.get_TouristType()));
         }
-        System.out.println("\n本游乐设施的所有游客管理对象的等候时间均被修改完成！");
+        String outputInfo = "\n本游乐设施的所有游客管理对象的等候时间均被修改完成！";
+        Print.print(
+                new PrintInfo(
+                        "Entertainment",
+                        String.valueOf(System.identityHashCode(this)),
+                        "UpdateAllWaitingTime",
+                        outputInfo
+                )
+        );
     }
 
     /*

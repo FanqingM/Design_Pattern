@@ -14,4 +14,6 @@ public class VIP1 extends Status {
     public double getDiscount() {
         return 0.9;
     }
+    @Override
+    public Boolean getAuthority() { return false; }
 }

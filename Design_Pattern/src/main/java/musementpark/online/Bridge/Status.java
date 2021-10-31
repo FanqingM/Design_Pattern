@@ -10,4 +10,9 @@ public abstract class Status {
      * @return double 返回折扣数
      */
     public abstract double getDiscount();
+    /**
+     * description:获取对应身份等级的折扣
+     * @return Boolean 返回
+     */
+    public abstract Boolean getAuthority();
 }
