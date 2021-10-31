@@ -1,15 +1,13 @@
 package musementpark.offline.entertainment.specification;
 
-/**
- * author：FanqingM
- * description：系统调用该接口构造复杂限制
- */
+
 public interface ISpecification {
 
     boolean isSatisfiedBy(Visitor visitor);
 
     /**
      * and操作
+     *
      * @param spec
      * @return
      */
@@ -17,6 +15,7 @@ public interface ISpecification {
 
     /**
      * or操作
+     *
      * @param spec
      * @return
      */
@@ -24,6 +23,7 @@ public interface ISpecification {
 
     /**
      * not操作
+     *
      * @return
      */
     ISpecification not();

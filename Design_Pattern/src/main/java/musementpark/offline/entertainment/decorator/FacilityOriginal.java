@@ -1,18 +1,15 @@
 package musementpark.offline.entertainment.decorator;
-/**
- * author：FanqingM
- * description：未获得装饰的游乐设施
+/*
+被装饰者
  */
-import musementpark.offline.entertainment.composite.Component;
-
-public class FacilityOriginal extends Component {
-    /**
-     * 得到该节点名字
-     * @return
-     */
+public class FacilityOriginal extends Facility {
     @Override
-    public String getName() {
+    protected String getDesc() {
         return "娱乐设施";
+    }
+    @Override
+    protected int cost() {
+        return 8;
     }
 }
 
