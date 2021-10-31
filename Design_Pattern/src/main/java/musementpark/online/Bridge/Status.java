@@ -7,12 +7,15 @@ package musementpark.online.Bridge;
 public abstract class Status {
     /**
      * description:获取对应身份等级的折扣
+     *
      * @return double 返回折扣数
      */
     public abstract double getDiscount();
+
     /**
-     * description:获取对应身份等级的折扣
-     * @return Boolean 返回
+     * description:获取对应身份等级的游玩权限
+     *
+     * @return Boolean 返回权限
      */
     public abstract Boolean getAuthority();
 }
