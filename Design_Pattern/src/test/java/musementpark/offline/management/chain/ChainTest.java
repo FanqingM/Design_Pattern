@@ -36,8 +36,10 @@ class ChainTest {
         lf4.setParent(c2);
 
         Bug bug = new Bug(50);
+        Bug bug2 = new Bug(200);
 
         lf3.handle(bug);
+        lf3.handle(bug2);
     }
 
 }

@@ -2,10 +2,12 @@ package musementpark.offline.management.mediator;
 
 
 import musementpark.offline.management.chain.Bug;
+import musementpark.util.Print;
+import musementpark.util.PrintInfo;
 
 /**
- * 叶子节点（相当于ConcreteElement）
- * @date 2016年2月29日
+ * author：FanqingM
+ * description：组合模式叶子对象，这里与中介者模式连用，解决了组合模式树节点之间的交流问题
  */
 public class Leaf extends Component {
 
@@ -14,6 +16,7 @@ public class Leaf extends Component {
 
     public Leaf(String name) {
         super();
+        super.name = name;
         this.name = name;
     }
     @Override
@@ -39,10 +42,25 @@ public class Leaf extends Component {
     public String getName() {
         return name;
     }
+
+    /**
+     * 为体现中介者模式，交流后进行的一些操作
+     */
     @Override
     public void operation() {
-        System.out.println(this.name + "的一些操作");
+        Print.print(
+                new PrintInfo(
+                        "Leaf(Component)",
+                        String.valueOf(System.identityHashCode(this)),
+                        "operation",
+                        this.name + "进行一些操作"
+                )
+        );
     }
+
+    /**
+     * 向另一方发起交流
+     */
     public void notifyColleagueB() {
         mediator.notifyColleagueB();
     }

@@ -1,12 +1,10 @@
 package musementpark.offline.entertainment.memento;
 
-import musementpark.offline.base.security.composite.Component;
-import musementpark.offline.base.security.composite.Composite;
-import musementpark.offline.base.security.composite.Leaf;
+import musementpark.offline.entertainment.composite.Component;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 import musementpark.offline.entertainment.command.Entertainment;
 import musementpark.offline.entertainment.command.*;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MementoTest {
     public static void main(String[] args) {
@@ -38,14 +36,7 @@ class MementoTest {
         myMacro.addCommand(new LightCommand(entertain));
         EntertainmentCommand cc = new CloseCommand(entertain);
         myMacro.execute();
-        //这里应该用宏命令创建备忘录
         Memento m = entertain.createMemento();
-        System.out.println(m.volume);
-        System.out.println(m.light);
-        System.out.println(m.isOpen);
-        System.out.println(m.getState().volume);
-        System.out.println(m.getState().light);
-        System.out.println(m.getState().isOpen);
         mementoStack.add(m);
 
         System.out.println("存档状态");

@@ -1,8 +1,8 @@
 package musementpark.offline.entertainment.command;
 
-import musementpark.offline.base.security.composite.Component;
-import musementpark.offline.base.security.composite.Composite;
-import musementpark.offline.base.security.composite.Leaf;
+import musementpark.offline.entertainment.composite.Component;
+import musementpark.offline.entertainment.composite.Composite;
+import musementpark.offline.entertainment.composite.Leaf;
 
 class MacroCommandTest {
     public static void main(String[] args) {

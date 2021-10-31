@@ -34,17 +34,11 @@ class MediatorTest {
         lf3.setParent(c2);
         lf4.setParent(c2);
 
-
-//        Colleague colleagueA = new ConcreteColleagueA();
-//        Colleague colleagueB = new ConcreteColleagueB();
-
         //构造这两个对象的中介者
         Mediator mediator = new ConcreteMediator(lf1, lf2);
         lf1.setMediator(mediator);
         lf2.setMediator(mediator);
 
-//        ((ConcreteColleagueA)colleagueA).notifyColleagueB();
-//        ((ConcreteColleagueB)colleagueB).notifyColleagueA();
         lf1.mediator.notifyColleagueB();
         lf2.mediator.notifyColleagueA();
     }
