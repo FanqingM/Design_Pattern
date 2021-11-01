@@ -19,7 +19,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'musementpark.Main'
+    mainClass = 'Main'
     applicationDefaultJvmArgs = ['-Dfile.encoding=UTF-8']
 }
 
