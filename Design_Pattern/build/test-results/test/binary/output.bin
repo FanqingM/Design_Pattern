@@ -1,58 +1,42 @@
 
 Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = BorrowShooting;
--	description = 游客1正在使用射击场;
+	className = CleaningServiced;
+	objectId = 1993955286;
+	methodName = setServiced;
+&	description = 清洁服务被执行;
 
 
 Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = BorrowShooting;
--	description = 游客2正在使用射击场;
+	className = Servant;
+	objectId = 620823328;
+	methodName = service;
+#	description = 雇工执行服务;
 
 
 Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = BorrowShooting;
--	description = 游客3正在使用射击场;
-
-
-请等待
-
-Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = BorrowShooting;
--	description = 游客4正在使用射击场;
+	className = FoodServiced;
+	objectId = 1868639924;
+	methodName = setServiced;
+&	description = 食品服务被执行;
 
 
 Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = ReturnShooting;
--	description = 游客1已使用完射击场;
+	className = Servant;
+	objectId = 620823328;
+	methodName = service;
+#	description = 雇工执行服务;
 
 
 Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = ReturnShooting;
--	description = 游客2已使用完射击场;
+	className = MedicalServiced;
+	objectId = 700108932;
+	methodName = setServiced;
+&	description = 医疗服务被执行;
 
 
 Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = ReturnShooting;
--	description = 游客3已使用完射击场;
-
-
-Print:
-	className = User;
-	objectId = 1316512866;
-	methodName = ReturnShooting;
--	description = 游客4已使用完射击场;
+	className = Servant;
+	objectId = 620823328;
+	methodName = service;
+#	description = 雇工执行服务;
 
