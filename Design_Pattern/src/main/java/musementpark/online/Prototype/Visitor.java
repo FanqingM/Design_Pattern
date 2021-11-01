@@ -11,7 +11,7 @@ import java.util.HashMap;
  * description: 该类为Visitor抽象类，是具体类型游客的类的父类。对于游客的生成我们采用了原型模式，将每一种类型的游客都登记在父类中
  * 在该类有一个hash表的结构，其中注册了所有子类的一个对象，当需要生成某个子类的实例时直接通过该类的方法即可生成
  */
-public abstract class Visitor {
+public abstract class Visitor implements Cloneable{
     private static HashMap<String,Visitor> _prototypes=new HashMap<>();
 
     /**
@@ -53,7 +53,17 @@ public abstract class Visitor {
      * description: 该方法是一个抽象方法，供子类重写，返回子类的对象
      * @return 返回一个父类型的引用
      */
-    public abstract Visitor clone();
+    @Override
+    public Visitor clone() {
+        Visitor ret=null;
+        try {
+             ret = (Visitor) super.clone();
+        }
+        catch (CloneNotSupportedException e){
+            e.printStackTrace();
+        }
+    return ret;
+    }
 
 
     private int _cost = 0;
