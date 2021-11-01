@@ -1,7 +1,7 @@
 package musementpark.offline.management.composite;
 
 
-import musementpark.offline.management.chain.Bug;
+import musementpark.offline.management.chain.Request;
 /**
  * author：FanqingM
  * description：抽象的组件对象，将组合模式与责任链模式自然结合
@@ -18,9 +18,9 @@ public abstract class Component {
 
     /**
      * 节点的处理用户请求函数
-     * @param bug
+     * @param request
      */
-    public void handle(Bug bug) {
+    public void handle(Request request) {
         throw new UnsupportedOperationException("对象不支持这个功能！");
     }
 

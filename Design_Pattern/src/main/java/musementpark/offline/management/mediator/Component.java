@@ -1,7 +1,7 @@
 package musementpark.offline.management.mediator;
 
 
-import musementpark.offline.management.chain.Bug;
+import musementpark.offline.management.chain.Request;
 
 /**
  * author：FanqingM
@@ -32,9 +32,9 @@ public abstract class Component {
 
     /**
      * 处理用户请求
-     * @param bug
+     * @param request
      */
-    public void handle(Bug bug) {
+    public void handle(Request request) {
         throw new UnsupportedOperationException("对象不支持这个功能！");
     }
 

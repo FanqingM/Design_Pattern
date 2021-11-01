@@ -35,11 +35,11 @@ class ChainTest {
         lf3.setParent(c2);
         lf4.setParent(c2);
 
-        Bug bug = new Bug(50);
-        Bug bug2 = new Bug(200);
+        Request request = new Request(50);
+        Request request2 = new Request(200);
 
-        lf3.handle(bug);
-        lf3.handle(bug2);
+        lf3.handle(request);
+        lf3.handle(request2);
     }
 
 }

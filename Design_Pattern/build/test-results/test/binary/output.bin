@@ -1,42 +1,42 @@
 
 Print:
-	className = CleaningServiced;
-	objectId = 1993955286;
-	methodName = setServiced;
-&	description = 清洁服务被执行;
+"	className = Component（Leaf）;
+	objectId = 1521929235;
+	methodName = handle;
+^	description = 清洁工管理部门无法解决了一个难度为 50 的 bug，传给上级;
 
 
 Print:
-	className = Servant;
-	objectId = 620823328;
-	methodName = service;
-#	description = 雇工执行服务;
+'	className = Component（Composite）;
+	objectId = 1076985615;
+	methodName = handle;
+U	description = 管理部门无法解决了一个难度为 50 的 bug，传给上级;
 
 
 Print:
-	className = FoodServiced;
-	objectId = 1868639924;
-	methodName = setServiced;
-&	description = 食品服务被执行;
+'	className = Component（Composite）;
+	objectId = 1371463804;
+	methodName = solve;
+C	description = 总管理部门解决了一个难度为 50 的 bug;
 
 
 Print:
-	className = Servant;
-	objectId = 620823328;
-	methodName = service;
-#	description = 雇工执行服务;
+"	className = Component（Leaf）;
+	objectId = 1521929235;
+	methodName = handle;
+_	description = 清洁工管理部门无法解决了一个难度为 200 的 bug，传给上级;
 
 
 Print:
-	className = MedicalServiced;
-	objectId = 700108932;
-	methodName = setServiced;
-&	description = 医疗服务被执行;
+'	className = Component（Composite）;
+	objectId = 1076985615;
+	methodName = handle;
+V	description = 管理部门无法解决了一个难度为 200 的 bug，传给上级;
 
 
 Print:
-	className = Servant;
-	objectId = 620823328;
-	methodName = service;
-#	description = 雇工执行服务;
+'	className = Component（Composite）;
+	objectId = 1371463804;
+	methodName = handle;
+W	description = 总管理部门无法解决了一个难度为 200，该bug无法解决;
 

@@ -1,7 +1,7 @@
 package musementpark.offline.management.composite;
 
 
-import musementpark.offline.management.chain.Bug;
+import musementpark.offline.management.chain.Request;
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;
 
@@ -43,37 +43,37 @@ public class Leaf extends Component {
 
     /**
      * 解决用户请求
-     * @param bug
+     * @param request
      */
-    private void solve(Bug bug) {
+    private void solve(Request request) {
         Print.print(
                 new PrintInfo(
                         "Leaf（Composite）",
                         String.valueOf(System.identityHashCode(this)),
                         "solve",
-                        this.name + "解决了一个难度为 " + bug.value + " 的 bug"
+                        this.name + "解决了一个难度为 " + request.value + " 的游客请求"
                 )
         );
     }
 
     /**
      * 处理用户请求
-     * @param bug
+     * @param request
      */
     @Override
-    public void handle(Bug bug) {
-        if (bug.value <= 20) {
-            solve(bug);
+    public void handle(Request request) {
+        if (request.value <= 20) {
+            solve(request);
         } else if (this.getParent() != null) {
             Print.print(
                     new PrintInfo(
                             "Component（Leaf）",
                             String.valueOf(System.identityHashCode(this)),
                             "handle",
-                            this.name + "无法解决了一个难度为 " + bug.value + " 的 bug，传给上级"
+                            this.name + "无法解决了一个难度为 " + request.value + " 的游客请求，传给上级"
                     )
             );
-            this.getParent().handle(bug);
+            this.getParent().handle(request);
         }
         else
         {
@@ -82,7 +82,7 @@ public class Leaf extends Component {
                             "Component（Leaf）",
                             String.valueOf(System.identityHashCode(this)),
                             "handle",
-                            this.name + "无法解决了一个难度为 " + bug.value +"，该bug无法解决"
+                            this.name + "无法解决了一个难度为 " + request.value +"，该游客请求暂时无法解决"
                     )
             );
         }

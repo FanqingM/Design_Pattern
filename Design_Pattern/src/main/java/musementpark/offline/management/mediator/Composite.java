@@ -1,7 +1,7 @@
 package musementpark.offline.management.mediator;
 
 
-import musementpark.offline.management.chain.Bug;
+import musementpark.offline.management.chain.Request;
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;
 
@@ -30,15 +30,15 @@ public class Composite extends Component {
         super.name = name;
         this.name = name;
     }
-    private void solve(Bug bug) {
-        System.out.println(this.name + "解决了一个难度为 " + bug.value + " 的 bug");
+    private void solve(Request request) {
+        System.out.println(this.name + "解决了一个难度为 " + request.value + " 的 bug");
     }
     @Override
-    public void handle(Bug bug) {
-        if (bug.value <= 20*level) {
-            solve(bug);
+    public void handle(Request request) {
+        if (request.value <= 20*level) {
+            solve(request);
         } else if (this.getParent() != null) {
-            this.getParent().handle(bug);
+            this.getParent().handle(request);
         }
     }
     @Override
