@@ -6,9 +6,11 @@ import musementpark.offline.entertainment.composite.Composite;
 import musementpark.offline.entertainment.composite.Leaf;
 import musementpark.offline.entertainment.command.Entertainment;
 import musementpark.offline.entertainment.command.*;
+import org.junit.jupiter.api.Test;
 
 class MementoTest {
-    public static void main(String[] args) {
+    @Test
+    public void MementoTest() {
         Construct construct = new Construct();
         Component lf1 = construct.ConstructEntertainment();
         Entertainment entertain = new Entertainment(lf1);

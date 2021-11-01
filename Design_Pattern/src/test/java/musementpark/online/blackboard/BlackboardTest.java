@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class BlackboardTest {
     @Test
-    public void blackboardtest() {
+    public void BlackboardTest() {
         Blackboard blackboard = new Blackboard();
         blackboard.resources.add(new PrinterResource());
         blackboard.resources.add(new CorrectResource());

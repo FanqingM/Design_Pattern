@@ -3,9 +3,11 @@ package musementpark.offline.entertainment.visitor;
 import musementpark.offline.entertainment.composite.Component;
 import musementpark.offline.entertainment.composite.Composite;
 import musementpark.offline.entertainment.composite.Leaf;
+import org.junit.jupiter.api.Test;
 
 class VisitorTest {
-    public static void main(String[] args) {
+    @Test
+    public void VisitorTest() {
         //创建一个树状结构
         Component root = new Composite("娱乐区");
 
@@ -31,7 +33,5 @@ class VisitorTest {
         System.out.println("++++++++++++++++++++++++");
         os.setRoot(c2);
         os.handleRequest(new CheckElectricVisitor());
-
-
     }
 }

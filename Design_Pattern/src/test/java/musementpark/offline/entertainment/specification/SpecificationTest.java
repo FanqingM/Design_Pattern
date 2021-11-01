@@ -1,9 +1,12 @@
 package musementpark.offline.entertainment.specification;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class SpecificationTest {
-    public static void main(String[] args) {
+    @Test
+    public void SpecificationTest() {
         Visitor[] visitors = {
                 new Visitor("mfq", 18,120),
                 new Visitor("yxb" , 19,200)

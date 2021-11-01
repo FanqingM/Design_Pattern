@@ -2,7 +2,7 @@ package musementpark.online.decorator;
 
 import musementpark.offline.entertainment.composite.Component;
 import musementpark.offline.entertainment.visitor.Visitor;
-import musementpark.online.Singleton_Flyweight.OnlineEntertainment;
+import musementpark.online.singletonFlyweight.OnlineEntertainment;
 
 import java.util.ArrayList;
 import java.util.Hashtable;

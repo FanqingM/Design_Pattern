@@ -3,9 +3,11 @@ package musementpark.offline.management.mediator;
 import musementpark.offline.management.mediator.Component;
 import musementpark.offline.management.mediator.Composite;
 import musementpark.offline.management.mediator.Leaf;
+import org.junit.jupiter.api.Test;
 
 class MediatorTest {
-    public static void main(String[] args) {
+    @Test
+    public void MediatorTest() {
         Component root = new Composite("总管理部门");
         root.setParent(null);
         root.setLevel(3);

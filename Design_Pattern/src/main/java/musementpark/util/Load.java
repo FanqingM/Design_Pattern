@@ -10,9 +10,9 @@ public class Load {
     // 这个要被放到工具函数里
     public static void loadVisitor() {
         try {
-            Class.forName("musementpark.online.Prototype.Child");
-            Class.forName("musementpark.online.Prototype.Adult");
-            Class.forName("musementpark.online.NullObject.NullVisitor");
+            Class.forName("musementpark.online.prototype.Child");
+            Class.forName("musementpark.online.prototype.Adult");
+            Class.forName("musementpark.online.nullObject.NullVisitor");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

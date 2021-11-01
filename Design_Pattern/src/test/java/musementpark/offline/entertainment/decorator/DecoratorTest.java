@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 class DecoratorTest {
     @Test
-    public void DecoratorTest3() {
+    public void DecoratorTest() {
         Construct construct = new Construct();
         Component lf1 = construct.ConstructEntertainment();
         EntertainmentDecorator facility1 = new FenceDecorator(lf1);

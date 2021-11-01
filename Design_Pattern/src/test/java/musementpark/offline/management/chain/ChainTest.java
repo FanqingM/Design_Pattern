@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class ChainTest {
     @Test
-    public void test() {
+    public void ChainTest() {
         //创建一个树状结构
         Component root = new Composite("总管理部门");
         root.setParent(null);

@@ -5,9 +5,11 @@ import musementpark.offline.entertainment.composite.Component;
 import musementpark.offline.entertainment.composite.Composite;
 import musementpark.offline.entertainment.composite.Leaf;
 import musementpark.offline.entertainment.Construct;
+import org.junit.jupiter.api.Test;
 
 class MacroCommandTest {
-    public static void main(String[] args) {
+    @Test
+    public void MacroCommandTest() {
         Construct construct = new Construct();
         Component lf1 = construct.ConstructEntertainment();
         Entertainment entertain = new Entertainment(lf1);

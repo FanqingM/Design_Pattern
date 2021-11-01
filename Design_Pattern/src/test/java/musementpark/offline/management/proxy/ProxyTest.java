@@ -1,11 +1,14 @@
 package musementpark.offline.management.proxy;
 
+import org.junit.jupiter.api.Test;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProxyTest {
-    public static void main(String[] args) {
+    @Test
+    public void ProxyTest() {
         ReadFile boss = new Boss();
 
         InvocationHandler handler = new Secretary(boss);

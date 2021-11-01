@@ -7,8 +7,7 @@ import musementpark.offline.entertainment.composite.*;
 
 class IteratorTest {
     @Test
-    //对于客户端而言，操作的都是组件对象。
-    public void entertainmentListTest() {
+    public void IteratorTest() {
         EntertainmentList entertainmentList = new EntertainmentList();
         Construct construct = new Construct();
         entertainmentList = construct.ConstructEntertainmentList();
