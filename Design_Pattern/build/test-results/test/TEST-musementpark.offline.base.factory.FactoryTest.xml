@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.base.factory.FactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-01T13:44:36" hostname="fanqing-mdeMacBook-Pro.local" time="0.018">
+  <properties/>
+  <testcase name="FactoryTest()" classname="musementpark.offline.base.factory.FactoryTest" time="0.018"/>
+  <system-out><![CDATA[Inside Circle::draw() method.
+Inside Rectangle::draw() method.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
