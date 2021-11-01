@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="musementpark.offline.entertainment.objectpool.ObjectPoolTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-01T06:31:49" hostname="fanqing-mdeMacBook-Pro.local" time="0.035">
+  <properties/>
+  <testcase name="ObjectPoolTest()" classname="musementpark.offline.entertainment.objectpool.ObjectPoolTest" time="0.035"/>
+  <system-out><![CDATA[
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = BorrowShooting;
+	description = 游客1正在使用射击场;
+
+
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = BorrowShooting;
+	description = 游客2正在使用射击场;
+
+
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = BorrowShooting;
+	description = 游客3正在使用射击场;
+
+请等待
+
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = BorrowShooting;
+	description = 游客4正在使用射击场;
+
+
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = ReturnShooting;
+	description = 游客1已使用完射击场;
+
+
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = ReturnShooting;
+	description = 游客2已使用完射击场;
+
+
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = ReturnShooting;
+	description = 游客3已使用完射击场;
+
+
+Print:
+	className = User;
+	objectId = 1316512866;
+	methodName = ReturnShooting;
+	description = 游客4已使用完射击场;
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
