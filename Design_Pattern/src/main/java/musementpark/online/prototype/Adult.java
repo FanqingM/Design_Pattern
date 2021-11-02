@@ -29,11 +29,10 @@ public class Adult extends Visitor {
      *
      * @return 返回值为Adult类型的对象
      */
-    @Override
-    public Adult clone() {
-        return new Adult(1);
-    }
-
+//    @Override
+//    public Adult clone() {
+//        return new Adult(1);
+//    }
     /**
      * description:重写了父类的getStatus方法，打印出该游客的身份以及对应的折扣
      */

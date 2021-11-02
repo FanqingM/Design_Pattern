@@ -29,11 +29,10 @@ public class Child extends Visitor {
      *
      * @return 返回值为Child类型的对象
      */
-    @Override
-    public Child clone() {
-        return new Child(1);
-    }
-
+//    @Override
+//    public Child clone() {
+//        return new Child(1);
+//    }
     /**
      * description:重写了父类的getStatus方法，打印出该游客的身份以及对应的折扣
      */
