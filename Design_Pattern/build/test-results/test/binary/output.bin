@@ -1,14 +1,0 @@
-
-Print:
-	className = Clark;
-	objectId = 1316512866;
-	methodName = checkClarkCard;
-b	description = 职工卡上姓名是：游乐园人力资源经理——小明,工作ID是：123;
-
-
-Print:
-	className = Clark;
-	objectId = 1702932354;
-	methodName = checkClark;
-�	description = 该职工姓名是：游乐园人力资源经理——小明,工作ID是：123,办公室在游乐园人力资源部门,家庭地址是：上海市同济大学;
-

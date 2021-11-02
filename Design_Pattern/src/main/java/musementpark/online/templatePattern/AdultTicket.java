@@ -1,4 +1,4 @@
-package musementpark.online.TemplatePattern;
+package musementpark.online.templatePattern;
 /**
  * author: PandaLYZ
  * description:该类为AdultTicket类，继承了Ticket类，处理成人票种相关信息

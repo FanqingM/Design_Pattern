@@ -1,4 +1,4 @@
-package musementpark.online.TemplatePattern;
+package musementpark.online.templatePattern;
 
 import musementpark.util.Print;
 import musementpark.util.PrintInfo;

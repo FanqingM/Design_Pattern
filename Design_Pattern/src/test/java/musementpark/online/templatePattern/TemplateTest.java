@@ -1,10 +1,13 @@
-package musementpark.online.TemplatePattern;
+package musementpark.online.templatePattern;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 
 import org.junit.jupiter.api.Test;
 
-public class TicketTest {
+public class TemplateTest {
     @Test
-    void ticketTest()
+    public void TemplateTest()
     {
         Ticket t1 = new AdultTicket(100);
         Ticket t2 = new ChildTicket(100,0.5);

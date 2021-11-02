@@ -1,4 +1,4 @@
-package musementpark.online.TemplatePattern;
+package musementpark.online.templatePattern;
 
 /**
  * author: PandaLYZ
