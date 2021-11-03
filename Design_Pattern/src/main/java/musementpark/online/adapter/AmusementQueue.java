@@ -24,7 +24,7 @@ public class AmusementQueue {
                 "AmusementQueue",
                 String.valueOf(System.identityHashCode(this)),
                 "isEmpty",
-                "队列"+(_queue.isEmpty()?"是":"不是"+"空的")
+                "队列"+(_queue.isEmpty()?"是":"不是")+"空的"
         ));
         return _queue.isEmpty();
     }
